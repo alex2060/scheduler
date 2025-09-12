@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+2163922558_3786443_09-09_06-37-58_Inbound_Martin.mp4,Shredding,3786443,2025-09-09 6:40:30,Retail,dropoff-call,Unsold,INVALID,0,0,0,,0:53,1e35e3dc-21cb-924c-106d-634eceab12d3,682003739262
+8107330055_3786447_09-09_06-50-21_Outbound_Martin.mp4,Shredding,3786447,2025-09-09 6:50:31,Vignette,dropoff-call,Unsold,INVALID,5,0,0,,1:07,1e35e3dc-21cb-924c-106d-634eceab12d3,682003742237
+5732169271_3786452_09-09_06-54-40_Inbound_Martin.mp4,Shredding,3786452,2025-09-09 6:57:34,Organic,organic-call,Unsold,DUPLICATE,0,0,0,,1:23,1e35e3dc-21cb-924c-106d-634eceab12d3,682003744021
+4023502060_3786544_09-09_08-25-32_Inbound_Martin.mp4,Shredding,3786527,2025-09-09 8:29:30,Retail,dropoff-call,Unsold,INVALID,0,0,0,,1:42,1e35e3dc-21cb-924c-106d-634eceab12d3,682003791632
+8122786573_3788408_09-11_09-30-38_Inbound_Kayla.mp4,Shredding,3786539,2025-09-09 8:38:41,Vignette,dropoff-call,Unsold,DUPLICATE,15,0,0,,2:50,1e35e3dc-21cb-924c-106d-634eceab12d3,682003797135
+4164876901_3786552_09-09_08-46-18_Outbound_Martin.mp4,Shredding,3786552,2025-09-09 8:46:25,Retail,dropoff-call,Unsold,DIRECT CONNECT,3,0,0,,1:08,1e35e3dc-21cb-924c-106d-634eceab12d3,682003803302
+4167675382_3786553_09-09_08-46-58_Outbound_Martin.mp4,Shredding,3786553,2025-09-09 8:47:04,Retail,dropoff-call,Unsold,DIRECT CONNECT,2,0,0,,0:37,1e35e3dc-21cb-924c-106d-634eceab12d3,682003803972
+7322414061_3786571_09-09_08-56-53_Inbound_Martin.mp4,Shredding,3786571,2025-09-09 9:06:27,Vignette,dropoff-call,Unsold,DUPLICATE,10,0,0,,2:20,1e35e3dc-21cb-924c-106d-634eceab12d3,682003810677
+7169094467_3786595_09-09_09-19-37_Inbound_Martin.mp4,Shredding,3786595,2025-09-09 9:22:44,Retail,dropoff-call,Unsold,INVALID,50,0,0,,2:26,1e35e3dc-21cb-924c-106d-634eceab12d3,682003827970
+7074949837_3786607_09-09_09-26-17_Inbound_Martin.mp4,Shredding,3786607,2025-09-09 9:32:14,Retail,dropoff-call,Unsold,QUOTED,3,0,0,,1:53,1e35e3dc-21cb-924c-106d-634eceab12d3,682003832820

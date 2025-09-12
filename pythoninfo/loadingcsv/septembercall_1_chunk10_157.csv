@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+4165782397_3785526_09-08_06-56-58_Inbound_Martin.mp4,Shredding,3785526,2025-09-08 7:00:17,Retail,dropoff-call,Unsold,INVALID,0,0,0,,2:05,1e35e3dc-21cb-924c-106d-634eceab12d3,682003206221
+6462508482_3785505_09-08_07-20-25_Inbound_Martin.mp4,Shredding,3785538,2025-09-08 7:27:19,Local,local-call,Unsold,DUPLICATE,1,0,0,,6:28,1e35e3dc-21cb-924c-106d-634eceab12d3,682003222045
+5088290566_3785539_09-08_07-10-33_Outbound_Martin.mp4,Shredding,3785539,2025-09-08 7:27:24,Retail,dropoff-call,Unsold,INVALID,0,0,0,,3:50,1e35e3dc-21cb-924c-106d-634eceab12d3,682003216536
+6093240543_3785548_09-08_07-30-04_Inbound_Martin.mp4,Shredding,3785548,2025-09-08 7:38:16,Vignette,dropoff-call,Unsold,INVALID,0,0,0,,3:04,1e35e3dc-21cb-924c-106d-634eceab12d3,682003226533
+6108883750_3785551_09-08_07-39-17_Inbound_Martin.mp4,Shredding,3785551,2025-09-08 7:42:52,Vignette,dropoff-call,Unsold,DIRECT CONNECT,2,0,0,,1:23,1e35e3dc-21cb-924c-106d-634eceab12d3,682003231114
+3174818316_3785561_09-08_07-50-50_Outbound_Martin.mp4,Shredding,3785561,2025-09-08 7:52:41,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,2:03,1e35e3dc-21cb-924c-106d-634eceab12d3,682003234525
+8645676195_3785577_09-08_07-59-57_Inbound_Martin.mp4,Shredding,3785577,2025-09-08 8:05:35,Vignette,dropoff-call,Unsold,DUPLICATE,6,0,0,,3:19,1e35e3dc-21cb-924c-106d-634eceab12d3,682003242422
+9186197244_3785616_09-08_08-32-19_Inbound_Martin.mp4,Shredding,3785616,2025-09-08 8:42:19,Retail,dropoff-call,Unsold,QUOTED,5,0,0,,5:32,1e35e3dc-21cb-924c-106d-634eceab12d3,682003263602
+7542441060_3785617_09-08_08-39-01_Inbound_Martin.mp4,Shredding,3785617,2025-09-08 8:43:14,Retail,dropoff-call,Unsold,INVALID,0,0,0,,0:50,1e35e3dc-21cb-924c-106d-634eceab12d3,682003268828
+9543283343_3785641_09-08_08-58-19_Inbound_Martin.mp4,Shredding,3785641,2025-09-08 9:03:14,Local,local-call,Unsold,DUPLICATE,10,0,0,,1:42,1e35e3dc-21cb-924c-106d-634eceab12d3,682003282053

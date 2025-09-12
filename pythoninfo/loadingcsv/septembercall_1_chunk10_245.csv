@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+7079537234_3785935_09-08_11-52-44_Inbound_Tobias.mp4,Shredding,3785935,2025-09-08 12:04:38,Retail,dropoff-call,Unsold,INVALID,4,0,0,,2:34,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003437665
+7182695165_3786246_09-08_14-49-20_Inbound_Sharleen.mp4,Shredding,3786464,2025-09-09 7:23:45,Organic,organic-call,Unsold,DUPLICATE,0,0,0,,5:13,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003754896
+6623498555_3786471_09-09_07-12-47_Outbound_Tobias.mp4,Shredding,3786471,2025-09-09 7:32:34,Vignette,dropoff-call,Unsold,INVALID,0,0,0,,9:48,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003753515
+2185906854_3786473_09-09_07-31-10_Inbound_Tobias.mp4,Shredding,3786473,2025-09-09 7:35:42,Retail,dropoff-call,Unsold,TEXT REFER,1,0,0,,2:27,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003762315
+2036309224_3786490_09-09_07-35-38_Inbound_Tobias.mp4,Shredding,3786490,2025-09-09 8:01:53,Retail,dropoff-call,Unsold,INVALID,5,0,0,,5:25,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003764397
+3039625576_3786502_09-09_08-11-14_Outbound_Tobias.mp4,Shredding,3786502,2025-09-09 8:12:26,Organic,organic-call,Unsold,INVALID,0,0,0,,1:33,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003781930
+9857917277_3786516_09-09_08-37-43_Inbound_Kylee.mp4,Shredding,3786516,2025-09-09 8:23:46,Retail,dropoff-call,Unsold,INVALID,0,0,0,,1:42,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003788840
+9792999828_3786542_09-09_07-52-20_Inbound_Kayla.mp4,Shredding,3786542,2025-09-09 8:39:42,Local,local-call,Unsold,INVALID,0,0,0,,19:29,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003765191
+4023502060_3786544_09-09_08-25-32_Inbound_Martin.mp4,Shredding,3786544,2025-09-09 8:41:01,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,3:32,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003787161
+6093240543_3785548_09-08_07-30-04_Inbound_Martin.mp4,Shredding,3786545,2025-09-09 8:41:04,Vignette,dropoff-call,Unsold,DIRECT CONNECT,3,0,0,,10:37,9f8476fe-9b18-cae0-28a2-6439b47e1239,682003755053

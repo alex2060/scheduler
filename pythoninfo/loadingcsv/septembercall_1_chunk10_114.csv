@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+7088873262_3786663_09-09_09-59-07_Inbound_Kylee.mp4,Records,3786663,2025-09-09 10:00:31,Vignette,dropoff-call,Unsold,INVALID,0,0,0,,0:27,400f4fec-99bd-f232-20d3-6581e346e0dd,682003858080
+3038317010_3786772_09-09_10-52-48_Inbound_Kylee.mp4,Records,3786772,2025-09-09 10:58:53,Local,local-call,Unsold,DUPLICATE,4,0,0,,5:28,400f4fec-99bd-f232-20d3-6581e346e0dd,682003902458
+7574465798_3786804_09-09_11-14-54_Inbound_Kylee.mp4,Records,3786804,2025-09-09 11:17:47,Vignette,dropoff-call,Unsold,NOT READY,0,0,0,,2:21,400f4fec-99bd-f232-20d3-6581e346e0dd,682003919765
+9799972733_3787227_09-09_15-38-55_Inbound_Kylee.mp4,Records,3787227,2025-09-09 15:39:22,Paid,adwords,Unsold,INVALID,0,0,0,,0:07,400f4fec-99bd-f232-20d3-6581e346e0dd,682004120424
+3035627025_3787587_09-10_10-05-00_Inbound_Kylee.mp4,Records,3787587,2025-09-10 10:10:00,Retail,dropoff-call,Unsold,REFERRED TO WEBSITE,1,0,0,,1:26,400f4fec-99bd-f232-20d3-6581e346e0dd,682004370547
+8174547088_3788340_09-11_08-16-53_Inbound_Kylee.mp4,Records,3788340,2025-09-11 8:22:52,Paid,adwords,Unsold,INVALID,0,0,0,,0:56,400f4fec-99bd-f232-20d3-6581e346e0dd,682375790522
+5028529802_3788371_09-11_08-52-34_Inbound_Kylee.mp4,Records,3788371,2025-09-11 8:59:29,Vignette,dropoff-call,Unsold,REFERRED TO WEBSITE,1,0,0,,2:06,400f4fec-99bd-f232-20d3-6581e346e0dd,682375812789
+3475676961_3788543_09-11_11-13-13_Inbound_Kylee.mp4,Records,3788543,2025-09-11 11:14:33,Vignette,dropoff-call,Unsold,INVALID,0,0,0,,0:40,400f4fec-99bd-f232-20d3-6581e346e0dd,682375916365
+7023042670_3788656_09-11_12-23-26_Outbound_Kylee.mp4,Records,3788656,2025-09-11 12:26:44,Vignette,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,1:42,400f4fec-99bd-f232-20d3-6581e346e0dd,682375969933
+4807911684_3788558_09-11_11-21-37_Inbound_Kylee.mp4,Records,3788558,2025-09-11 11:25:10,Vignette,dropoff-call,Plus,,908,603.17,3,IRM,2:41,400f4fec-99bd-f232-20d3-6581e346e0dd,682375922711

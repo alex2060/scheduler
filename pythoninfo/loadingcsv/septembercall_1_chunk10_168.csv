@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+2567407512_3787234_09-09_15-50-42_Inbound_Martin.mp4,Shredding,3787234,2025-09-09 15:52:15,Retail,dropoff-call,Unsold,DIRECT CONNECT,2,0,0,,1:07,1e35e3dc-21cb-924c-106d-634eceab12d3,682004128154
+3157942470_3787364_09-10_06-37-46_Inbound_Martin.mp4,Shredding,3787364,2025-09-10 6:42:09,Vignette,dropoff-call,Unsold,INVALID,35,0,0,,1:34,1e35e3dc-21cb-924c-106d-634eceab12d3,682004246250
+2406694136_3787365_09-10_06-42-34_Outbound_Martin.mp4,Shredding,3787365,2025-09-10 6:42:40,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,0:30,1e35e3dc-21cb-924c-106d-634eceab12d3,682004246807
+8646685673_3787370_09-10_06-52-19_Outbound_Martin.mp4,Shredding,3787370,2025-09-10 6:52:58,Email,email,Unsold,DUPLICATE,0,0,0,,1:47,1e35e3dc-21cb-924c-106d-634eceab12d3,682004248766
+9374311882_3787375_09-10_07-02-10_Outbound_Martin.mp4,Shredding,3787375,2025-09-10 7:02:21,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,1:30,1e35e3dc-21cb-924c-106d-634eceab12d3,682004252028
+7039094777_3787405_09-10_07-29-48_Inbound_Martin.mp4,Shredding,3787405,2025-09-10 7:30:59,Organic,organic-call,Unsold,DUPLICATE,0,0,0,,0:49,1e35e3dc-21cb-924c-106d-634eceab12d3,682004271847
+3479482441_3788236_09-10_17-41-48_Inbound_Briscia.mp4,Shredding,3787415,2025-09-10 7:47:28,Paid,adwords,Unsold,QUOTED,2,0,0,,2:24,1e35e3dc-21cb-924c-106d-634eceab12d3,682004278641
+5406452831_3787421_09-10_07-47-53_Inbound_Martin.mp4,Shredding,3787421,2025-09-10 7:51:17,Paid,bing,Unsold,QUOTED,5,0,0,,1:50,1e35e3dc-21cb-924c-106d-634eceab12d3,682004280183
+8606735475_3787470_09-10_08-32-19_Inbound_Martin.mp4,Shredding,3787470,2025-09-10 8:47:45,Retail,dropoff-call,Unsold,INVALID,0,0,0,,2:20,1e35e3dc-21cb-924c-106d-634eceab12d3,682004304440
+4054734546_3787479_09-10_08-49-31_Inbound_Martin.mp4,Shredding,3787479,2025-09-10 8:53:18,Retail,dropoff-call,Unsold,INVALID,2,0,0,,1:04,1e35e3dc-21cb-924c-106d-634eceab12d3,682004314434

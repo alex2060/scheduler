@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+3308805025_3785645_09-08_09-04-19_Outbound_Martin.mp4,Shredding,3785645,2025-09-08 9:04:25,Vignette,dropoff-call,Unsold,DIRECT CONNECT,4,0,0,,0:54,1e35e3dc-21cb-924c-106d-634eceab12d3,682003284565
+9158925906_3785651_09-08_09-05-00_Inbound_Martin.mp4,Shredding,3785651,2025-09-08 9:08:14,Retail,dropoff-call,Unsold,QUOTED,5,0,0,,2:04,1e35e3dc-21cb-924c-106d-634eceab12d3,682003287405
+7122519065_3785672_09-08_09-13-33_Inbound_Martin.mp4,Shredding,3785672,2025-09-08 9:18:30,Vignette,dropoff-call,Unsold,QUOTED,7,0,0,,1:28,1e35e3dc-21cb-924c-106d-634eceab12d3,682003294320
+9417640048_3785673_09-08_09-19-20_Outbound_Martin.mp4,Shredding,3785673,2025-09-08 9:20:51,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,2:14,1e35e3dc-21cb-924c-106d-634eceab12d3,682003296614
+4233003009_3785711_09-08_09-44-15_Inbound_Martin.mp4,Shredding,3785711,2025-09-08 9:47:14,Retail,dropoff-call,Unsold,INVALID,0,0,0,,0:28,1e35e3dc-21cb-924c-106d-634eceab12d3,682003320586
+8283014881_3785084_09-06_10-42-52_Inbound_Tobias.mp4,Shredding,3785712,2025-09-08 9:47:30,Vignette,dropoff-call,Unsold,INVALID,0,0,0,,1:13,1e35e3dc-21cb-924c-106d-634eceab12d3,682003318324
+7142878719_3785715_09-08_09-50-36_Inbound_Kylee.mp4,Shredding,3785715,2025-09-08 9:49:04,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,1:58,1e35e3dc-21cb-924c-106d-634eceab12d3,682003321211
+5203734478_3785729_09-08_09-56-11_Inbound_Martin.mp4,Shredding,3785729,2025-09-08 9:59:32,Local,local-call,Unsold,INVALID,0,0,0,,0:25,1e35e3dc-21cb-924c-106d-634eceab12d3,682003331216
+8325709781_3785271_09-08_10-01-28_Inbound_Martin.mp4,Shredding,3785746,2025-09-08 10:07:45,Organic,organic-call,Unsold,DUPLICATE,0,0,0,,1:19,1e35e3dc-21cb-924c-106d-634eceab12d3,682003336544
+8325709781_3785271_09-08_10-01-28_Inbound_Martin.mp4,Shredding,3785747,2025-09-08 10:07:46,Organic,organic-call,Unsold,DUPLICATE,0,0,0,,1:20,1e35e3dc-21cb-924c-106d-634eceab12d3,682003336544

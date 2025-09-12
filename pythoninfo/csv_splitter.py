@@ -60,7 +60,10 @@ def split_csv(input_file: str, chunk_size: int = 2, output_dir: Optional[str] = 
     with open(input_file, 'r', newline='', encoding='utf-8') as csvfile:
         sample = csvfile.read(1024)
         csvfile.seek(0)
-        dialect = csv.Sniffer().sniff(sample)
+        try:
+            dialect = csv.Sniffer().sniff(sample, delimiters=[',',';','\t','|'])
+        except csv.Error:
+            dialect = csv.get_dialect('excel')  # default comma-delimited
         reader = csv.reader(csvfile, dialect)
         header = next(reader)
         all_rows = list(reader)
@@ -217,9 +220,9 @@ def process_file_and_fetch_status(file_path: str, server_base: str) -> dict:
 def fullsplit(file: str):
     row = get_first_row(file)
     if row == "something":
-        split_csv(file, 2, "loadingcsv")
+        split_csv(file, 10, "loadingcsv")
     else:
-        split_csv(file, 2, "loadingcsv")
+        split_csv(file, 10, "loadingcsv")
 
 def add_to_global_dict(key: str, value) -> None:
     global _global_dict
@@ -478,9 +481,9 @@ def run_it_all():
 
 
 def main():
-    fullsplit("shortcalls.csv")
-    num_workers = 40
-    with ThreadPoolExecutor(max_workers=num_workers) as executor:
+    #fullsplit("septembercall_1.csv")
+    num_workers = 40000
+    with ThreadPoolExecutor(max_workers=4) as executor:
         futures = [executor.submit(run_it_all) for _ in range(num_workers)]
         for future in futures:
             try:

@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+9015098390_3786058_09-08_13-32-08_Inbound_Martin.mp4,Shredding,3786107,2025-09-08 13:33:49,Retail,dropoff-call,Unsold,DUPLICATE,0,0,0,,0:46,1e35e3dc-21cb-924c-106d-634eceab12d3,682003522457
+9147728212_3786112_09-08_13-33-05_Inbound_Martin.mp4,Shredding,3786112,2025-09-08 13:35:24,Organic,organic-call,Unsold,INVALID,0,0,0,,1:31,1e35e3dc-21cb-924c-106d-634eceab12d3,682003523172
+9164080319_3786114_09-08_13-36-11_Outbound_Martin.mp4,Shredding,3786114,2025-09-08 13:36:54,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,1:04,1e35e3dc-21cb-924c-106d-634eceab12d3,682003525045
+5032921006_3786127_09-08_13-46-01_Outbound_Martin.mp4,Shredding,3786127,2025-09-08 13:46:07,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,0:42,1e35e3dc-21cb-924c-106d-634eceab12d3,682003532079
+9188086792_3786142_09-08_13-49-55_Inbound_Martin.mp4,Shredding,3786142,2025-09-08 13:54:01,Vignette,dropoff-call,Unsold,DUPLICATE,0,0,0,,2:45,1e35e3dc-21cb-924c-106d-634eceab12d3,682003536531
+5616622955_3786160_09-08_13-59-04_Inbound_Martin.mp4,Shredding,3786160,2025-09-08 14:01:54,Retail,dropoff-call,Unsold,REFERRED TO WEBSITE,6,0,0,,2:10,1e35e3dc-21cb-924c-106d-634eceab12d3,682003543685
+7149122424_3786178_09-08_14-10-37_Inbound_Martin.mp4,Shredding,3786173,2025-09-08 14:10:13,Vignette,dropoff-call,Unsold,INVALID,3,0,0,,3:47,1e35e3dc-21cb-924c-106d-634eceab12d3,682003549250
+3047208777_3786176_09-08_14-11-15_Outbound_Martin.mp4,Shredding,3786176,2025-09-08 14:11:23,Vignette,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,0:37,1e35e3dc-21cb-924c-106d-634eceab12d3,682003552305
+7149122424_3786178_09-08_14-10-37_Inbound_Martin.mp4,Shredding,3786178,2025-09-08 14:11:49,Vignette,dropoff-call,Unsold,NOT READY,0,0,0,,0:23,1e35e3dc-21cb-924c-106d-634eceab12d3,682003552931
+9403231147_3786182_09-08_14-13-06_Outbound_Martin.mp4,Shredding,3786182,2025-09-08 14:13:17,Vignette,dropoff-call,Unsold,DUPLICATE,0,0,0,,1:20,1e35e3dc-21cb-924c-106d-634eceab12d3,682003553635

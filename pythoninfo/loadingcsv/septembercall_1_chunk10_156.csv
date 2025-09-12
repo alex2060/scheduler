@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+3236418845_3785443_09-07_14-52-56_Inbound_Martin.mp4,Shredding,3785443,2025-09-07 14:54:19,Retail,dropoff-call,Unsold,INVALID,0,0,0,,0:18,1e35e3dc-21cb-924c-106d-634eceab12d3,682003123262
+8067819220_3785444_09-07_14-54-32_Inbound_Martin.mp4,Shredding,3785444,2025-09-07 14:56:47,Retail,dropoff-call,Unsold,DUPLICATE,0,0,0,,1:30,1e35e3dc-21cb-924c-106d-634eceab12d3,682003123689
+8583501274_3785445_09-07_15-04-39_Outbound_Martin.mp4,Shredding,3785445,2025-09-07 15:04:51,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,0:32,1e35e3dc-21cb-924c-106d-634eceab12d3,682003126108
+5036530255_3785449_09-07_15-13-17_Outbound_Martin.mp4,Shredding,3785449,2025-09-07 15:13:22,Retail,dropoff-call,Unsold,DIRECT CONNECT,2,0,0,,0:31,1e35e3dc-21cb-924c-106d-634eceab12d3,682003128261
+6155667733_3785453_09-07_15-41-49_Inbound_Martin.mp4,Shredding,3785453,2025-09-07 15:46:36,Local,local-call,Unsold,INVALID,0,0,0,,4:05,1e35e3dc-21cb-924c-106d-634eceab12d3,682003134818
+8314265762_3785454_09-07_15-47-52_Outbound_Martin.mp4,Shredding,3785454,2025-09-07 15:48:01,Vignette,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,1:18,1e35e3dc-21cb-924c-106d-634eceab12d3,682003135824
+3102833927_3785456_09-07_15-50-50_Inbound_Martin.mp4,Shredding,3785456,2025-09-07 15:54:31,Retail,dropoff-call,Unsold,INVALID,0,0,0,,3:20,1e35e3dc-21cb-924c-106d-634eceab12d3,682003136856
+8056572859_3785458_09-07_15-58-43_Inbound_Martin.mp4,Shredding,3785458,2025-09-07 16:01:00,Retail,dropoff-call,Unsold,QUOTED,4,0,0,,1:20,1e35e3dc-21cb-924c-106d-634eceab12d3,682003138522
+7172489997_3785508_09-08_06-12-14_Outbound_Martin.mp4,Shredding,3785508,2025-09-08 6:12:20,Retail,dropoff-call,Unsold,DIRECT CONNECT,2,0,0,,0:39,1e35e3dc-21cb-924c-106d-634eceab12d3,682003193356
+9197714800_3785523_09-08_06-53-37_Inbound_Martin.mp4,Shredding,3785523,2025-09-08 6:55:08,Organic,organic-call,Unsold,INVALID,10,0,0,,1:08,1e35e3dc-21cb-924c-106d-634eceab12d3,682003205079

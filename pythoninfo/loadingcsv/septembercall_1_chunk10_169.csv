@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+7189247350_3787506_09-10_09-10-16_Inbound_Martin.mp4,Shredding,3787506,2025-09-10 9:12:03,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,0:45,1e35e3dc-21cb-924c-106d-634eceab12d3,682004328539
+6194744001_3787507_09-10_09-12-10_Outbound_Martin.mp4,Shredding,3787507,2025-09-10 9:12:16,Retail,dropoff-call,Unsold,DIRECT CONNECT,1,0,0,,0:32,1e35e3dc-21cb-924c-106d-634eceab12d3,682004328965
+2482921535_3787509_09-10_09-11-55_Inbound_Martin.mp4,Shredding,3787509,2025-09-10 9:13:53,Retail,dropoff-call,Unsold,INVALID,1,0,0,,1:35,1e35e3dc-21cb-924c-106d-634eceab12d3,682004329749
+7138981116_3787577_09-10_09-59-19_Inbound_Martin.mp4,Shredding,3787547,2025-09-10 9:43:10,Retail,dropoff-call,Unsold,INVALID,0,0,0,,0:51,1e35e3dc-21cb-924c-106d-634eceab12d3,682004350504
+7139628525_3787551_09-10_09-43-55_Inbound_Martin.mp4,Shredding,3787551,2025-09-10 9:46:58,Vignette,dropoff-call,Unsold,QUOTED,6,0,0,,1:01,1e35e3dc-21cb-924c-106d-634eceab12d3,682004353764
+4063609916_3787566_09-10_09-50-45_Inbound_Martin.mp4,Shredding,3787566,2025-09-10 9:54:49,Retail,dropoff-call,Unsold,INVALID,3,0,0,,2:17,1e35e3dc-21cb-924c-106d-634eceab12d3,682004358928
+2525261921_3787570_09-10_09-47-37_Inbound_Martin.mp4,Shredding,3787570,2025-09-10 9:58:17,Vignette,dropoff-call,Unsold,QUOTED,1,0,0,,4:13,1e35e3dc-21cb-924c-106d-634eceab12d3,682004356454
+3308199671_3787574_09-10_09-57-01_Inbound_Martin.mp4,Shredding,3787574,2025-09-10 10:01:10,Retail,dropoff-call,Unsold,INVALID,0,0,0,,0:25,1e35e3dc-21cb-924c-106d-634eceab12d3,682004363631
+7138981116_3787577_09-10_09-59-19_Inbound_Martin.mp4,Shredding,3787577,2025-09-10 10:03:02,Retail,dropoff-call,Unsold,DUPLICATE,2,0,0,,1:55,1e35e3dc-21cb-924c-106d-634eceab12d3,682004365423
+9548056592_3787643_09-10_10-42-15_Inbound_Martin.mp4,Shredding,3787643,2025-09-10 10:43:51,Retail,dropoff-call,Unsold,QUOTED,8,0,0,,1:06,1e35e3dc-21cb-924c-106d-634eceab12d3,682004400087

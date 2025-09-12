@@ -1,0 +1,11 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+6096536777_3788410_09-11_08-12-34_Outbound_Kayla.mp4,Shredding,3788410,2025-09-11 9:37:01,Retail,dropoff-call,Unsold,INVALID,0,0,0,,5:19,e86ae726-9f41-1ae4-98e0-689398f88626,682375784002
+5615734337_3788424_09-11_09-52-18_Inbound_Kayla.mp4,Shredding,3788424,2025-09-11 9:58:01,Organic,organic-call,Unsold,QUOTED,2,0,0,,3:23,e86ae726-9f41-1ae4-98e0-689398f88626,682375855772
+9726559942_3788454_09-11_10-05-34_Inbound_Kayla.mp4,Shredding,3788454,2025-09-11 10:13:11,Retail,dropoff-call,Unsold,DUPLICATE,10,0,0,,5:23,e86ae726-9f41-1ae4-98e0-689398f88626,682375865891
+9082165348_3788468_09-11_10-19-13_Inbound_Sharleen.mp4,Shredding,3788465,2025-09-11 10:18:25,Retail,dropoff-call,Unsold,INVALID,0,0,0,,0:42,e86ae726-9f41-1ae4-98e0-689398f88626,682375873795
+2516614000_3788466_09-11_10-19-15_Outbound_Kayla.mp4,Shredding,3788466,2025-09-11 10:20:08,Retail,dropoff-call,Unsold,DIRECT CONNECT,3,0,0,,1:53,e86ae726-9f41-1ae4-98e0-689398f88626,682375875718
+4245419002_3788480_09-11_10-29-26_Outbound_Kayla.mp4,Shredding,3788480,2025-09-11 10:29:38,Retail,dropoff-call,Unsold,DIRECT CONNECT,2,0,0,,3:02,e86ae726-9f41-1ae4-98e0-689398f88626,682375881650
+5592851029_3788539_09-11_11-09-43_Inbound_Kayla.mp4,Shredding,3788539,2025-09-11 11:10:32,Local,local-call,Unsold,INVALID,0,0,0,,0:24,e86ae726-9f41-1ae4-98e0-689398f88626,682375913671
+6163407560_3788553_09-11_11-16-59_Inbound_Kayla.mp4,Shredding,3788553,2025-09-11 11:20:54,Retail,dropoff-call,Unsold,REFERRED TO WEBSITE,4,0,0,,3:11,e86ae726-9f41-1ae4-98e0-689398f88626,682375919230
+2093984531_3788585_09-11_11-38-29_Inbound_Kayla.mp4,Shredding,3788585,2025-09-11 11:44:29,Retail,dropoff-call,Unsold,QUOTED,5,0,0,,2:28,e86ae726-9f41-1ae4-98e0-689398f88626,682375935305
+3102872269_3788587_09-11_11-45-32_Outbound_Kayla.mp4,Shredding,3788587,2025-09-11 11:45:41,Vignette,dropoff-call,Unsold,DIRECT CONNECT,4,0,0,,1:23,e86ae726-9f41-1ae4-98e0-689398f88626,682375938470
