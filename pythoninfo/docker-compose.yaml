@@ -1,0 +1,8 @@
+services:
+  python-app:
+    build: .
+    container_name: my-python-app
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python csv_splitter.py

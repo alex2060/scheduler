@@ -1,0 +1,14 @@
+sqlalchemy
+pymysql
+requests
+openai-whisper
+boto3
+dotenv
+python-dotenv
+faster-whisper
+celery
+redis
+flower
+psutil
+flask-cors
+portalocker

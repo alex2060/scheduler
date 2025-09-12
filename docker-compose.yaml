@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  php-file-browser:
+    build: .
+    container_name: php-file-browser
+    ports:
+      - "8080:80"
+    volumes:
+      # Mount current directory and parent directory for browsing
+      - ./:/var/www/html/current
+      - ../:/var/www/html/parent
+      # Mount entire filesystem (optional - for full system browsing)
+      # - /:/var/www/html/system:ro
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+    restart: unless-stopped
