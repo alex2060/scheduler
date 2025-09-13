@@ -1,0 +1,102 @@
+2025-09-12 23:12:29,784 [MainThread] [Worker 8387452672] step  done
+2025-09-12 23:12:29,784 [MainThread] [Worker 8387452672] step  donelogged
+2025-09-12 23:12:29,788 [MainThread] [Worker 1] step  done{}
+2025-09-12 23:12:36,209 [MainThread] [Worker 8387452672] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file'}
+2025-09-12 23:12:36,209 [MainThread] [Worker 8387452672] step  doneservers usedhttps://landing1.aimachengine.com
+2025-09-12 23:12:36,681 [MainThread] [Worker 8387452672] step  donehere!
+2025-09-12 23:12:36,681 [MainThread] [Worker 8387452672] step  donehere!
+2025-09-12 23:12:36,682 [MainThread] [Worker 8387452672] step  done🚀 Starting upload...https://landing1.aimachengine.com/upload
+2025-09-12 23:12:37,258 [MainThread] [Worker 8387452672] step  done✅ Upload successful, streaming results:
+2025-09-12 23:12:37,258 [MainThread] [Worker 8387452672] step  done
+2025-09-12 23:12:37,258 [MainThread] [Worker 8387452672] step  doneintwo
+2025-09-12 23:12:37,259 [MainThread] [Worker 8387452672] step  doneinthree<Response [200]>
+2025-09-12 23:14:06,846 [MainThread] [Worker 8387452672] step  done
+2025-09-12 23:14:06,846 [MainThread] [Worker 8387452672] step  donelogged
+2025-09-12 23:14:06,847 [MainThread] [Worker 1] step  done{}
+2025-09-12 23:14:12,194 [MainThread] [Worker 8387452672] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file'}
+2025-09-12 23:14:12,194 [MainThread] [Worker 8387452672] step  doneservers usedhttps://landing1.aimachengine.com
+2025-09-12 23:14:12,509 [MainThread] [Worker 8387452672] step  donehere!
+2025-09-12 23:14:12,509 [MainThread] [Worker 8387452672] step  donehere!
+2025-09-12 23:14:12,509 [MainThread] [Worker 8387452672] step  done SeptemberCall05_11 here!
+2025-09-12 23:14:12,510 [MainThread] [Worker 8387452672] step  done🚀 Starting upload...ttp://localhost:10000/upload
+2025-09-12 23:14:29,739 [MainThread] [Worker 8387452672] step  done
+2025-09-12 23:14:29,740 [MainThread] [Worker 8387452672] step  donelogged
+2025-09-12 23:14:29,741 [MainThread] [Worker 1] step  done{}
+2025-09-12 23:14:38,940 [MainThread] [Worker 8387452672] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file'}
+2025-09-12 23:14:38,941 [MainThread] [Worker 8387452672] step  doneservers usedhttps://landing1.aimachengine.com
+2025-09-12 23:14:39,209 [MainThread] [Worker 8387452672] step  donehere!
+2025-09-12 23:14:39,210 [MainThread] [Worker 8387452672] step  donehere!
+2025-09-12 23:14:39,210 [MainThread] [Worker 8387452672] step  done SeptemberCall05_11 here!
+2025-09-12 23:14:39,210 [MainThread] [Worker 8387452672] step  done🚀 Starting upload...http://localhost:10000/upload
+2025-09-12 23:14:39,472 [MainThread] [Worker 8387452672] step  done✅ Upload successful, streaming results:
+2025-09-12 23:14:39,473 [MainThread] [Worker 8387452672] step  done
+2025-09-12 23:14:39,473 [MainThread] [Worker 8387452672] step  doneintwo
+2025-09-12 23:14:39,473 [MainThread] [Worker 8387452672] step  doneinthree<Response [200]>
+2025-09-12 23:14:39,473 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:39,473 [MainThread] [Worker 8387452672] step  done[23:14:39] Task submitted: ec36b51e-61aa-4083-85fb-ccb19132ca9c
+2025-09-12 23:14:39,476 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:39,476 [MainThread] [Worker 8387452672] step  done[23:14:39] ⏳ Processing...
+2025-09-12 23:14:41,480 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:41,480 [MainThread] [Worker 8387452672] step  done[23:14:41] Task started - processing CSV file
+2025-09-12 23:14:41,481 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:41,481 [MainThread] [Worker 8387452672] step  done[23:14:41] Looking for table: SeptemberCall05_11
+2025-09-12 23:14:41,481 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:41,481 [MainThread] [Worker 8387452672] step  done[23:14:41] Inserting into SeptemberCall05_11 from [["transcript_AudioXnadmin", "TEXT"], ["file_AudioXnadmin", "TEXT"], ["service", "TEXT"], ["leadid", "TEXT"], ["leadcreated", "TEXT"], ["leadtype", "TEXT"], ["leadsource", "TEXT"], ["leadrating", "TEXT"], ["leadsubrating", "TEXT"], ["numberofboxes", "TEXT"], ["totalrevenue", "TEXT"], ["numberofpartners", "TEXT"], ["partnerofinterest", "TEXT"], ["evaluatortimer", "TEXT"], ["evaluatorid", "TEXT"], ["rccontactid", "TEXT"], ["rowDescriptionHash", "TEXT"]]
+2025-09-12 23:14:41,482 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:41,482 [MainThread] [Worker 8387452672] step  done[23:14:41] Processing row 1: ['6178287443_3784817_09-05_14-44-35_Inbound_Yolanda.mp4', 'Shredding', '3784817', '2025-09-05 14:50:21', 'Local', 'local-call', 'Basic MIXED', '', '10', '78.48', '2', '', '5:12', '56ded408-9519-274e-3636-4ff1bccb81e8', '682002600713']
+2025-09-12 23:14:41,482 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:41,482 [MainThread] [Worker 8387452672] step  done[23:14:41] Starting AudioFixMakeSS
+2025-09-12 23:14:41,482 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:41,482 [MainThread] [Worker 8387452672] step  done[23:14:41] File downloaded, uploading to R2...
+2025-09-12 23:14:41,483 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:41,483 [MainThread] [Worker 8387452672] step  done[23:14:41] ⏳ Processing...
+2025-09-12 23:14:43,485 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:43,486 [MainThread] [Worker 8387452672] step  done[23:14:43] Starting transcription...
+2025-09-12 23:14:43,487 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:43,487 [MainThread] [Worker 8387452672] step  done[23:14:43] ⏳ Processing...
+2025-09-12 23:14:45,538 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:45,539 [MainThread] [Worker 8387452672] step  done[23:14:45] ⏳ Processing...
+2025-09-12 23:14:47,544 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:47,544 [MainThread] [Worker 8387452672] step  done[23:14:47] ⏳ Processing...
+2025-09-12 23:14:49,553 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:49,554 [MainThread] [Worker 8387452672] step  done[23:14:49] ⏳ Processing...
+2025-09-12 23:14:51,561 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:51,561 [MainThread] [Worker 8387452672] step  done[23:14:51] ⏳ Processing...
+2025-09-12 23:14:53,564 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:53,564 [MainThread] [Worker 8387452672] step  done[23:14:53] ⏳ Processing...
+2025-09-12 23:14:55,567 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:55,567 [MainThread] [Worker 8387452672] step  done[23:14:55] ⏳ Processing...
+2025-09-12 23:14:57,571 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:57,571 [MainThread] [Worker 8387452672] step  done[23:14:57] ⏳ Processing...
+2025-09-12 23:14:59,571 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:14:59,572 [MainThread] [Worker 8387452672] step  done[23:14:59] ⏳ Processing...
+2025-09-12 23:15:01,579 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:01,580 [MainThread] [Worker 8387452672] step  done[23:15:01] ⏳ Processing...
+2025-09-12 23:15:03,584 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:03,585 [MainThread] [Worker 8387452672] step  done[23:15:03] ⏳ Processing...
+2025-09-12 23:15:05,587 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:05,587 [MainThread] [Worker 8387452672] step  done[23:15:05] ⏳ Processing...
+2025-09-12 23:15:07,591 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:07,591 [MainThread] [Worker 8387452672] step  done[23:15:07] ⏳ Processing...
+2025-09-12 23:15:09,594 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:09,594 [MainThread] [Worker 8387452672] step  done[23:15:09] ⏳ Processing...
+2025-09-12 23:15:11,596 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:11,596 [MainThread] [Worker 8387452672] step  done[23:15:11] ⏳ Processing...
+2025-09-12 23:15:13,600 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:13,600 [MainThread] [Worker 8387452672] step  done[23:15:13] ⏳ Processing...
+2025-09-12 23:15:15,602 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:15,602 [MainThread] [Worker 8387452672] step  done[23:15:15] ⏳ Processing...
+2025-09-12 23:15:17,604 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:17,604 [MainThread] [Worker 8387452672] step  done[23:15:17] ⏳ Processing...
+2025-09-12 23:15:19,607 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:19,607 [MainThread] [Worker 8387452672] step  done[23:15:19] ⏳ Processing...
+2025-09-12 23:15:21,608 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:21,609 [MainThread] [Worker 8387452672] step  done[23:15:21] ⏳ Processing...
+2025-09-12 23:15:23,612 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:23,612 [MainThread] [Worker 8387452672] step  done[23:15:23] ⏳ Processing...
+2025-09-12 23:15:25,614 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:25,615 [MainThread] [Worker 8387452672] step  done[23:15:25] ⏳ Processing...
+2025-09-12 23:15:27,616 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:27,617 [MainThread] [Worker 8387452672] step  done[23:15:27] ⏳ Processing...
+2025-09-12 23:15:29,618 [MainThread] [Worker 8387452672] step  doneinFour
+2025-09-12 23:15:29,618 [MainThread] [Worker 8387452672] step  done[23:15:29] ⏳ Processing...
