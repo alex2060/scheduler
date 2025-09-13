@@ -283,8 +283,7 @@ class UploadClient:
     def __init__(self, base_url: str):
         self.base_url = base_url.rstrip('/')
 
-    def upload_csv(self, csv_file_path: str, table_name: str, 
-                   timeout: int = 300,filename: str = "log.csv" ,thread_id :str:"thead") -> bool:
+    def upload_csv(self, csv_file_path: str, table_name: str, timeout: int = 300,filename: str = "log.csv" ,thread_id :str="thead") -> bool:
         """
         Upload CSV file to the /upload endpoint and stream the response
 
