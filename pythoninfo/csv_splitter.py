@@ -490,7 +490,7 @@ def run_it_all():
                 add_to_global_dict(server, "shared_server")
                 break
             print("no server", server, is_in_global_dict(server,thread_id))
-            logging.info(f"[Worker {thread_id}] step  done"+"no server", server, is_in_global_dict(server))
+            logging.info(f"[Worker {thread_id}] step  done"+"no server"+ server)
             time.sleep(5)
             print("server used", server)
             logging.info(f"[Worker {thread_id}] step  done"+"server used"+ server)
