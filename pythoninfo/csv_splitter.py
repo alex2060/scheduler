@@ -471,7 +471,7 @@ def run_it_all():
         file,
         table["check_test_result"]["table_name"],
         server,
-        6000000000000,
+        600000,
         "output/output_"+str(thread_id)+"_"+str(re.sub(r'[^a-zA-Z0-9]', '', file))+"_"+str(str(re.sub(r'[^a-zA-Z0-9]', '', server)))+".txt",
     )
     print("herewego",flush=True)
