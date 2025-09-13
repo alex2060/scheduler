@@ -456,6 +456,8 @@ def run_it_all():
         # Pick next file
         print("loading")
         logging.info(f"[Worker {thread_id}] step  done")
+        print("logged")
+        
         file = get_most_recent_file("loadingcsv")
         if file==None:
             time.sleep(5)
