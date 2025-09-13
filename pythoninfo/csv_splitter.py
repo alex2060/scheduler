@@ -499,7 +499,7 @@ def run_it_all():
 
 def main():
     with ThreadPoolExecutor(max_workers=4) as executor:
-        futures = {executor.submit(run_it_all) for _ in range(4)}
+        futures = {executor.submit(run_it_all) for _ in range(40000000)}
         
         try:
             for future in as_completed(futures):
