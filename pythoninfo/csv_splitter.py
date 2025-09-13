@@ -307,146 +307,130 @@ class UploadClient:
             print("❌ Error: File must be a CSV file")
             return False
 
-        try:
-            file_size = os.path.getsize(csv_file_path) / (1024 * 1024)  # MB
-            print("📁 File: {} ({} MB)"+csv_file_path,flush=True)
-            print("🏷️  Table:",flush=True)
-            print("🌐 Upload URL: ",flush=True)
-            print("=" * 60)
+        file_size = os.path.getsize(csv_file_path) / (1024 * 1024)  # MB
+        print("📁 File: {} ({} MB)"+csv_file_path,flush=True)
+        print("🏷️  Table:",flush=True)
+        print("🌐 Upload URL: ",flush=True)
+        print("=" * 60)
 
-            with open(csv_file_path, 'rb') as csv_file:
-                files = {'file': csv_file}
-                data = {'tableName': table_name}
+        with open(csv_file_path, 'rb') as csv_file:
+            files = {'file': csv_file}
+            data = {'tableName': table_name}
 
-                print("🚀 Starting upload..."+upload_url,flush=True)
-                logging.info(f"[Worker {thread_id}] step  done"+"❌ Error: File "+"🚀 Starting upload..."+upload_url)
-                appendfile(filename, "Starting upload..."+self.base_url)
+            print("🚀 Starting upload..."+upload_url,flush=True)
+            logging.info(f"[Worker {thread_id}] step  done"+"❌ Error: File "+"🚀 Starting upload..."+upload_url)
+            appendfile(filename, "Starting upload..."+self.base_url)
 
-                response = requests.post(
-                    upload_url,
-                    files=files,
-                    data=data,
-                    stream=True,
-                    timeout=timeout
-                )
+            response = requests.post(
+                upload_url,
+                files=files,
+                data=data,
+                stream=True,
+                timeout=timeout
+            )
 
-                if response.status_code == 200:
-                    print("✅ Upload successful, streaming results:", flush=True)
-                    logging.info(f"[Worker {thread_id}] step  done"+"✅ Upload successful, streaming results:")
-                    appendfile(filename, "✅ Upload successful, streaming results:")
-                    appendfile(filename, "Starting upload...")
-                    logging.info(f"[Worker {thread_id}] step  done")
-                    print("-" * 40)
+            if response.status_code == 200:
+                print("✅ Upload successful, streaming results:", flush=True)
+                logging.info(f"[Worker {thread_id}] step  done"+"✅ Upload successful, streaming results:")
+                appendfile(filename, "✅ Upload successful, streaming results:")
+                appendfile(filename, "Starting upload...")
+                logging.info(f"[Worker {thread_id}] step  done")
+                print("-" * 40)
+                
+                # Buffer to collect all response data
+                response_buffer = []
+                
+                try:
+                    logging.info(f"[Worker {thread_id}] step  done"+"intwo")
+                    # First, try to get the content length to see if we have a complete response
+                    content_length = response.headers.get('content-length')
+                    if content_length:
+                        print(f"Expected content length: {content_length} bytes", flush=True)
                     
-                    # Buffer to collect all response data
-                    response_buffer = []
+                    # Stream and collect the response with timeout handling
+                    response_received = False
+                    logging.info(f"[Worker {thread_id}] step  done"+"inthree")
                     
-                    try:
-                        # First, try to get the content length to see if we have a complete response
-                        content_length = response.headers.get('content-length')
-                        if content_length:
-                            print(f"Expected content length: {content_length} bytes", flush=True)
-                        
-                        # Stream and collect the response with timeout handling
-                        response_received = False
-                        
-                        for line in response.iter_lines(decode_unicode=True, chunk_size=1024):
-                            if line is not None:  # Check for None explicitly
-                                response_received = True
-                                line_stripped = line.strip()
-                                if line_stripped:  # Only process non-empty lines
-                                    timestamp = time.strftime("%H:%M:%S")
-                                    formatted_line = f"[{timestamp}] {line_stripped}"
-                                    print(formatted_line, flush=True)
-                                    logging.info(f"[Worker {thread_id}] step  done"+formatted_line)
-                                    appendfile(filename, formatted_line)
-                                    response_buffer.append(line_stripped)
-                                else:
-                                    # Still process empty lines but don't print them
-                                    response_buffer.append(line)
-                        
-                        # If no streaming data was received, try to get the full response content
-                        if not response_received:
-                            print("No streaming data received, attempting to get full response...", flush=True)
-                            try:
-                                # Get the full response text as fallback
-                                full_content = response.text
-                                if full_content.strip():
-                                    timestamp = time.strftime("%H:%M:%S")
-                                    lines = full_content.split('\n')
-                                    for line in lines:
-                                        if line.strip():
-                                            formatted_line = f"[{timestamp}] {line.strip()}"
-                                            print(formatted_line, flush=True)
-                                            logging.info(f"[Worker {thread_id}] step  done"+formatted_line)
-                                            appendfile(filename, formatted_line)
-                                            response_buffer.append(line.strip())
-                                else:
-                                    print("Response appears to be empty", flush=True)
-                                    appendfile(filename, "Response appears to be empty")
-                            except Exception as e:
-                                print(f"Error reading full response: {e}", flush=True)
-                                appendfile(filename, f"Error reading full response: {e}")
-                        
-                        print("-" * 40)
-                        print("🎉 Processing complete!")
-                        appendfile(filename, "🎉 Processing complete!")
-                        
-                        # Log summary
-                        total_lines = len([line for line in response_buffer if line.strip()])
-                        print(f"Total lines processed: {total_lines}", flush=True)
-                        appendfile(filename, f"Total lines processed: {total_lines}")
-                        
-                        return True
-                        
-                    except requests.exceptions.ChunkedEncodingError as e:
-                        print(f"Chunked encoding error (this might be normal for fast responses): {e}", flush=True)
-                        appendfile(filename, f"Chunked encoding error: {e}")
-                        # Try to get whatever content we can
-                        try:
-                            partial_content = response.content.decode('utf-8')
-                            if partial_content.strip():
+                    for line in response.iter_lines(decode_unicode=True, chunk_size=1024):
+                        logging.info(f"[Worker {thread_id}] step  done"+"inFour")
+                        if line is not None:  # Check for None explicitly
+                            response_received = True
+                            line_stripped = line.strip()
+                            if line_stripped:  # Only process non-empty lines
                                 timestamp = time.strftime("%H:%M:%S")
-                                print(f"[{timestamp}] Partial response: {partial_content}", flush=True)
-                                appendfile(filename, f"[{timestamp}] Partial response: {partial_content}")
-                        except:
-                            pass
-                        return True  # Still consider it successful
-                        
-                    except Exception as e:
-                        print(f"Error during streaming: {e}", flush=True)
-                        appendfile(filename, f"Error during streaming: {e}")
-                        return False
-
-                else:
-                    print(f"❌ Error: HTTP {response.status_code}")
-                    appendfile(filename, f"❌ Error: HTTP {response.status_code}")
+                                formatted_line = f"[{timestamp}] {line_stripped}"
+                                print(formatted_line, flush=True)
+                                logging.info(f"[Worker {thread_id}] step  done"+formatted_line)
+                                appendfile(filename, formatted_line)
+                                response_buffer.append(line_stripped)
+                            else:
+                                # Still process empty lines but don't print them
+                                response_buffer.append(line)
+                    
+                    # If no streaming data was received, try to get the full response content
+                    if not response_received:
+                        print("No streaming data received, attempting to get full response...", flush=True)
+                        try:
+                            # Get the full response text as fallback
+                            full_content = response.text
+                            if full_content.strip():
+                                timestamp = time.strftime("%H:%M:%S")
+                                lines = full_content.split('\n')
+                                for line in lines:
+                                    if line.strip():
+                                        formatted_line = f"[{timestamp}] {line.strip()}"
+                                        print(formatted_line, flush=True)
+                                        logging.info(f"[Worker {thread_id}] step  done"+formatted_line)
+                                        appendfile(filename, formatted_line)
+                                        response_buffer.append(line.strip())
+                            else:
+                                print("Response appears to be empty", flush=True)
+                                appendfile(filename, "Response appears to be empty")
+                        except Exception as e:
+                            print(f"Error reading full response: {e}", flush=True)
+                            appendfile(filename, f"Error reading full response: {e}")
+                    
+                    print("-" * 40)
+                    print("🎉 Processing complete!")
+                    appendfile(filename, "🎉 Processing complete!")
+                    
+                    # Log summary
+                    total_lines = len([line for line in response_buffer if line.strip()])
+                    print(f"Total lines processed: {total_lines}", flush=True)
+                    appendfile(filename, f"Total lines processed: {total_lines}")
+                    
+                    return True
+                    
+                except requests.exceptions.ChunkedEncodingError as e:
+                    print(f"Chunked encoding error (this might be normal for fast responses): {e}", flush=True)
+                    appendfile(filename, f"Chunked encoding error: {e}")
+                    # Try to get whatever content we can
                     try:
-                        error_text = response.text
-                        print(f"Response: {error_text}")
-                        appendfile(filename, f"Response: {error_text}")
+                        partial_content = response.content.decode('utf-8')
+                        if partial_content.strip():
+                            timestamp = time.strftime("%H:%M:%S")
+                            print(f"[{timestamp}] Partial response: {partial_content}", flush=True)
+                            appendfile(filename, f"[{timestamp}] Partial response: {partial_content}")
                     except:
-                        print("Could not read error response")
+                        pass
+                    return True  # Still consider it successful
+                    
+                except Exception as e:
+                    print(f"Error during streaming: {e}", flush=True)
+                    appendfile(filename, f"Error during streaming: {e}")
                     return False
 
-        except requests.exceptions.Timeout:
-            print(f"❌ Error: Request timed out after {timeout} seconds")
-            appendfile(filename, f"❌ Error: Request timed out after {timeout} seconds")
-            return False
-        except requests.exceptions.ConnectionError:
-            print(f"❌ Error: Could not connect to {upload_url}")
-            appendfile(filename, f"❌ Error: Could not connect to {upload_url}")
-            print("Make sure the Flask app is running and accessible")
-            appendfile(filename, "Make sure the Flask app is running and accessible")
-            return False
-        except requests.exceptions.RequestException as e:
-            print(f"❌ Request error: {e}")
-            appendfile(filename, f"❌ Request error: {e}")
-            return False
-        except Exception as e:
-            print(f"❌ Unexpected error: {e}")
-            appendfile(filename, f"❌ Unexpected error: {e}")
-            return False
+            else:
+                print(f"❌ Error: HTTP {response.status_code}")
+                appendfile(filename, f"❌ Error: HTTP {response.status_code}")
+                try:
+                    error_text = response.text
+                    print(f"Response: {error_text}")
+                    appendfile(filename, f"Response: {error_text}")
+                except:
+                    print("Could not read error response")
+                return False
+
 
 
 
