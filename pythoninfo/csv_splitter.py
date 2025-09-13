@@ -139,7 +139,7 @@ def run_upload_client(csv_file: str, table: str, url: str, timeout: int, textfil
         return -1, "", f"Exception running command: {e}"
     return completed.returncode, completed.stdout, completed.stderr
 
-def get_most_recent_file(directory: str, pattern: str = "*", exclude: Optional[Union[List[str], set]] = None) -> Optional[str]:
+def get_most_recent_file(thread_id,directory: str, pattern: str = "*", exclude: Optional[Union[List[str], set]] = None) -> Optional[str]:
     """
     Returns the full path of the most recently modified file in 'directory'
     matching 'pattern', excluding any in 'exclude' and any files already 
@@ -167,7 +167,7 @@ def get_most_recent_file(directory: str, pattern: str = "*", exclude: Optional[U
             continue
             
         # Skip if file is already processed (in global dictionary)
-        if is_in_global_dict(abs_path):
+        if is_in_global_dict(abs_path,thread_id):
             continue
 
             
@@ -459,7 +459,7 @@ def run_it_all():
         logging.info(f"[Worker {thread_id}] step  done")
         logging.info(f"[Worker {thread_id}] step  done"+"logged")
 
-        file = get_most_recent_file("loadingcsv")
+        file = get_most_recent_file(thread_id,"loadingcsv")
         if file==None:
             time.sleep(5)
             return "no more files"
