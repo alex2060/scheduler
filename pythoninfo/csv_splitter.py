@@ -318,7 +318,7 @@ class UploadClient:
             data = {'tableName': table_name}
 
             print("🚀 Starting upload..."+upload_url,flush=True)
-            logging.info(f"[Worker {thread_id}] step  done"+"❌ Error: File "+"🚀 Starting upload..."+upload_url)
+            logging.info(f"[Worker {thread_id}] step  done"+"🚀 Starting upload..."+upload_url)
             appendfile(filename, "Starting upload..."+self.base_url)
 
             response = requests.post(
@@ -351,7 +351,7 @@ class UploadClient:
                     response_received = False
                     logging.info(f"[Worker {thread_id}] step  done"+"inthree")
                     
-                    for line in response.iter_lines(decode_unicode=True, chunk_size=1024):
+                    for line in response.iter_lines(decode_unicode=True, chunk_size=5):
                         logging.info(f"[Worker {thread_id}] step  done"+"inFour")
                         if line is not None:  # Check for None explicitly
                             response_received = True
