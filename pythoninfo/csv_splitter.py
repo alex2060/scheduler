@@ -45,7 +45,7 @@ logging.basicConfig(
 # Global dictionary for tracking files and servers
 _global_dict = {}
 
-def split_csv(input_file: str, chunk_size: int = 2, output_dir: Optional[str] = None) -> Dict[str, List[Dict[str, int]]]:
+def split_csv(input_file: str, chunk_size: int = 2, output_dir: str = "loadingcsv") -> Dict[str, List[Dict[str, int]]]:
     """
     Split a CSV file into multiple smaller CSV files of a fixed row count.
 
@@ -59,6 +59,8 @@ def split_csv(input_file: str, chunk_size: int = 2, output_dir: Optional[str] = 
             'chunk_size': the chunk size used
             'files': list of dicts with 'filename' and 'rows'
     """
+    print("output_dir")
+    print(output_dir)
     if not os.path.exists(input_file):
         raise FileNotFoundError(f"Input file '{input_file}' not found")
 
@@ -235,9 +237,9 @@ def process_file_and_fetch_status(file_path: str, server_base: str) -> dict:
 def fullsplit(file: str):
     row = get_first_row(file)
     if row == "something":
-        split_csv(file, 10, "loadingcsv")
+        split_csv(file, 10)
     else:
-        split_csv(file, 10, "loadingcsv")
+        split_csv(file, 10)
 
 def add_to_global_dict(key: str, value) -> None:
     global _global_dict
@@ -476,7 +478,7 @@ def run_it_all():
     logging.info(f"[Worker {thread_id}] step  done"+"here!")
     client = UploadClient(server)
     logging.info(f"[Worker {thread_id}] step  done "+table["check_test_result"]["table_name"]+" here!")
-    success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, f"myfileoutput{thread_id}.txt",thread_id)
+    success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, "output/output_"+str(thread_id)+"_"+re.sub(r'[^a-zA-Z0-9]', '', server)+"_"+re.sub(r'[^a-zA-Z0-9]', '', file)+"_.txt",thread_id)
     remove_from_global_dict(server)
     
     logging.info(f"[Worker {thread_id}] step  done"+"here!"+file)
@@ -486,6 +488,7 @@ def run_it_all():
 
 
 def main():
+    #split_csv("septembercall_1.csv")
     with ThreadPoolExecutor(max_workers=6) as executor:
         futures = {executor.submit(run_it_all) for _ in range(6)}
         

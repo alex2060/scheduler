@@ -1,0 +1,3 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+9402321255_3788453_09-11_10-10-03_Inbound_Kylee.mp4,Shredding,3788453,2025-09-11 10:11:49,Retail,dropoff-call,Unsold,INVALID,0,0,0,,0:49,400f4fec-99bd-f232-20d3-6581e346e0dd,682375869514
+8392134704_3788469_09-11_10-19-54_Inbound_Kylee.mp4,Shredding,3788469,2025-09-11 10:21:20,Retail,dropoff-call,Unsold,DUPLICATE,0,0,0,,0:55,400f4fec-99bd-f232-20d3-6581e346e0dd,682375877304

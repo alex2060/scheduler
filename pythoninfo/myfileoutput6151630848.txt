@@ -1,1 +1,0 @@
-Starting upload...http://localhost:10000

@@ -1,0 +1,3 @@
+AudioXnadmin,service,lead_id,lead_created,lead_type,lead_source,lead_rating,lead_subrating,number of boxes,total revenue,number of partners,partner of interest,evaluator_timer,evaluator_id,rccontactid
+5732169271_3786452_09-09_06-54-40_Inbound_Martin.mp4,Shredding,3786452,2025-09-09 6:57:34,Organic,organic-call,Unsold,DUPLICATE,0,0,0,,1:23,1e35e3dc-21cb-924c-106d-634eceab12d3,682003744021
+4023502060_3786544_09-09_08-25-32_Inbound_Martin.mp4,Shredding,3786527,2025-09-09 8:29:30,Retail,dropoff-call,Unsold,INVALID,0,0,0,,1:42,1e35e3dc-21cb-924c-106d-634eceab12d3,682003791632

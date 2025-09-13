@@ -65,3 +65,1834 @@ Starting upload...
 [23:21:17] ⏳ Processing...
 [23:21:19] ⏳ Processing...
 [23:21:21] ⏳ Processing...
+Starting upload...https://go2.aimachengine.com
+✅ Upload successful, streaming results:
+Starting upload...
+❌ Request error: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+Starting upload...https://go2.aimachengine.com
+❌ Error: HTTP 502
+Response: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+<title>aimachengine.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+                <span class="inline-block">Bad gateway</span>
+                <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+                Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=go2.aimachengine.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-09-13 05:59:06 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                    <div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Browser
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=go2.aimachengine.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Kansas City</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=go2.aimachengine.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">go2.aimachengine.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Host
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e56aa83eafd2ff</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=go2.aimachengine.com" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>
+Starting upload...https://go2.aimachengine.com
+❌ Error: HTTP 502
+Response: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+<title>aimachengine.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+                <span class="inline-block">Bad gateway</span>
+                <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+                Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=go2.aimachengine.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-09-13 05:59:12 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                    <div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Browser
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=go2.aimachengine.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Kansas City</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=go2.aimachengine.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">go2.aimachengine.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Host
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e56acee81cd30b</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=go2.aimachengine.com" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>
+Starting upload...https://go2.aimachengine.com
+✅ Upload successful, streaming results:
+Starting upload...
+❌ Request error: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+Starting upload...https://go2.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go2.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e56c0b6f71d873 &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:00:03 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go2.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go2.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e56c0b6f71d873</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go2.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go2.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e56ca39dfe4e4b &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:00:27 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go2.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go2.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e56ca39dfe4e4b</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go2.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go2.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e56cfae9c24ded &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:00:41 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go2.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go2.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e56cfae9c24ded</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go2.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go2.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e56d1faac0d19b &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:00:47 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go2.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go2.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e56d1faac0d19b</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go2.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go2.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e56da65eafd18f &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:01:08 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go2.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go2.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e56da65eafd18f</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go2.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go2.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e56dd1cdcb4de8 &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:01:15 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go2.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go2.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e56dd1cdcb4de8</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go2.aimachengine.com
+✅ Upload successful, streaming results:
+Starting upload...
+[00:02:46] Task submitted: 5ec5aa45-349f-4754-8328-c36ba9b9fb77
+[00:02:46] ⏳ Processing...
+[00:02:48] Task started - processing CSV file
+[00:02:48] Looking for table: SeptemberCall05_11
+[00:02:48] Inserting into SeptemberCall05_11 from [["transcript_AudioXnadmin", "TEXT"], ["file_AudioXnadmin", "TEXT"], ["service", "TEXT"], ["leadid", "TEXT"], ["leadcreated", "TEXT"], ["leadtype", "TEXT"], ["leadsource", "TEXT"], ["leadrating", "TEXT"], ["leadsubrating", "TEXT"], ["numberofboxes", "TEXT"], ["totalrevenue", "TEXT"], ["numberofpartners", "TEXT"], ["partnerofinterest", "TEXT"], ["evaluatortimer", "TEXT"], ["evaluatorid", "TEXT"], ["rccontactid", "TEXT"], ["rowDescriptionHash", "TEXT"]]
+[00:02:48] Processing row 1: ['4842238073_3788279_09-11_06-34-30_Inbound_Kayla.mp4', 'Shredding', '3788279', '2025-09-11 6:37:33', 'Retail', 'dropoff-call', 'Unsold', 'TEXT REFER', '3', '0', '0', '', '2:35', 'e86ae726-9f41-1ae4-98e0-689398f88626', '682375743442']
+[00:02:48] Starting AudioFixMakeSS
+[00:02:48] File downloaded, uploading to R2...
+[00:02:48] Starting transcription...
+[00:02:48] ⏳ Processing...
+[00:02:50] ⏳ Processing...
+Starting upload...https://go.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e570a3fdf5d193 &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:03:11 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e570a3fdf5d193</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://landing1.aimachengine.com
+✅ Upload successful, streaming results:
+Starting upload...
+[00:04:08] Task submitted: 03b5f19c-fc2d-4071-989e-5af4c5c0d47a
+[00:04:08] ⏳ Processing...
+[00:04:11] Task started - processing CSV file
+[00:04:11] Looking for table: SeptemberCall05_11
+[00:04:11] Inserting into SeptemberCall05_11 from [["transcript_AudioXnadmin", "TEXT"], ["file_AudioXnadmin", "TEXT"], ["service", "TEXT"], ["leadid", "TEXT"], ["leadcreated", "TEXT"], ["leadtype", "TEXT"], ["leadsource", "TEXT"], ["leadrating", "TEXT"], ["leadsubrating", "TEXT"], ["numberofboxes", "TEXT"], ["totalrevenue", "TEXT"], ["numberofpartners", "TEXT"], ["partnerofinterest", "TEXT"], ["evaluatortimer", "TEXT"], ["evaluatorid", "TEXT"], ["rccontactid", "TEXT"], ["rowDescriptionHash", "TEXT"]]
+[00:04:11] Processing row 1: ['4842238073_3788279_09-11_06-34-30_Inbound_Kayla.mp4', 'Shredding', '3788279', '2025-09-11 6:37:33', 'Retail', 'dropoff-call', 'Unsold', 'TEXT REFER', '3', '0', '0', '', '2:35', 'e86ae726-9f41-1ae4-98e0-689398f88626', '682375743442']
+[00:04:11] Starting AudioFixMakeSS
+[00:04:11] File downloaded, uploading to R2...
+[00:04:11] Starting transcription...
+[00:04:11] ⏳ Processing...
+[00:04:13] ⏳ Processing...
+Starting upload...https://go.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e572a5e8374df4 &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:04:33 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e572a5e8374df4</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go.aimachengine.com
+❌ Error: HTTP 502
+Response: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+<title>aimachengine.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+                <span class="inline-block">Bad gateway</span>
+                <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+                Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=go.aimachengine.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-09-13 06:05:16 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                    <div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Browser
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=go.aimachengine.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Kansas City</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=go.aimachengine.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">go.aimachengine.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Host
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e573b2a854fa09</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=go.aimachengine.com" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>
+Starting upload...https://go.aimachengine.com
+✅ Upload successful, streaming results:
+Starting upload...
+[00:05:24] Task submitted: abc95db6-bef4-4de9-8cdf-16491ef6e291
+[00:05:24] ⏳ Processing...
+[00:05:26] Task started - processing CSV file
+[00:05:26] Looking for table: SeptemberCall05_11
+[00:05:26] Inserting into SeptemberCall05_11 from [["transcript_AudioXnadmin", "TEXT"], ["file_AudioXnadmin", "TEXT"], ["service", "TEXT"], ["leadid", "TEXT"], ["leadcreated", "TEXT"], ["leadtype", "TEXT"], ["leadsource", "TEXT"], ["leadrating", "TEXT"], ["leadsubrating", "TEXT"], ["numberofboxes", "TEXT"], ["totalrevenue", "TEXT"], ["numberofpartners", "TEXT"], ["partnerofinterest", "TEXT"], ["evaluatortimer", "TEXT"], ["evaluatorid", "TEXT"], ["rccontactid", "TEXT"], ["rowDescriptionHash", "TEXT"]]
+[00:05:26] Processing row 1: ['4842238073_3788279_09-11_06-34-30_Inbound_Kayla.mp4', 'Shredding', '3788279', '2025-09-11 6:37:33', 'Retail', 'dropoff-call', 'Unsold', 'TEXT REFER', '3', '0', '0', '', '2:35', 'e86ae726-9f41-1ae4-98e0-689398f88626', '682375743442']
+[00:05:26] Starting AudioFixMakeSS
+[00:05:26] File downloaded, uploading to R2...
+[00:05:26] ⏳ Processing...
+[00:05:28] Starting transcription...
+[00:05:28] ⏳ Processing...
+[00:05:30] ⏳ Processing...
+[00:05:32] ⏳ Processing...
+Starting upload...https://go1.aimachengine.com
+✅ Upload successful, streaming results:
+Starting upload...
+Starting upload...https://go1.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go1.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e5767afe1757b6 &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:07:10 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go1.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go1.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e5767afe1757b6</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go1.aimachengine.com
+❌ Error: HTTP 530
+Response: <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>Cloudflare Tunnel error | go1.aimachengine.com | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1033 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1033</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: 97e5768caf7fd19d &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2025-09-13 06:07:13 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        Cloudflare Tunnel error
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (go1.aimachengine.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. The host (go1.aimachengine.com) is configured as an Cloudflare Tunnel, and Cloudflare is currently unable to resolve it.
+                        
+                        
+                    </div>
+
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are a visitor of this website:</strong><br />Please try again in a few minutes.</p><p><strong>If you are the owner of this website:</strong><br />Ensure that cloudflared is running and can reach the network. You may wish to enable <a rel="noopener noreferrer" href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/">load balancing</a> for your tunnel.</p>
+                    </div>
+                    
+                </section>
+                
+
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">97e5768caf7fd19d</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">2605:a601:9414:cd00:d985:5084:3b90:df31</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
+
+         <script>
+    window._cf_translation = {};
+    
+    
+  </script> 
+        
+    </body>
+</html>
+Starting upload...https://go1.aimachengine.com
+✅ Upload successful, streaming results:
+Starting upload...
+[00:07:52] Task submitted: 9592dbe5-077d-405d-9858-be9cb1a96919
+[00:07:52] ⏳ Processing...
+[00:07:54] Task started - processing CSV file
+[00:07:54] Looking for table: SeptemberCall05_11
+[00:07:54] Inserting into SeptemberCall05_11 from [["transcript_AudioXnadmin", "TEXT"], ["file_AudioXnadmin", "TEXT"], ["service", "TEXT"], ["leadid", "TEXT"], ["leadcreated", "TEXT"], ["leadtype", "TEXT"], ["leadsource", "TEXT"], ["leadrating", "TEXT"], ["leadsubrating", "TEXT"], ["numberofboxes", "TEXT"], ["totalrevenue", "TEXT"], ["numberofpartners", "TEXT"], ["partnerofinterest", "TEXT"], ["evaluatortimer", "TEXT"], ["evaluatorid", "TEXT"], ["rccontactid", "TEXT"], ["rowDescriptionHash", "TEXT"]]
+[00:07:54] Processing row 1: ['4842238073_3788279_09-11_06-34-30_Inbound_Kayla.mp4', 'Shredding', '3788279', '2025-09-11 6:37:33', 'Retail', 'dropoff-call', 'Unsold', 'TEXT REFER', '3', '0', '0', '', '2:35', 'e86ae726-9f41-1ae4-98e0-689398f88626', '682375743442']
+[00:07:54] Starting AudioFixMakeSS
+[00:07:54] File downloaded, uploading to R2...
+[00:07:54] Starting transcription...
+[00:07:54] ⏳ Processing...
