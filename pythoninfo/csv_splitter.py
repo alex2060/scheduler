@@ -487,14 +487,22 @@ def run_it_all():
 def main():
     fullsplit("AAgogo3.csv")
     num_workers = 40000
+
     with ThreadPoolExecutor(max_workers=4) as executor:
-        futures = [executor.submit(run_it_all) for _ in range(num_workers)]
-        for future in futures:
+        # Start initial 4 workers
+        futures = {executor.submit(run_it_all) for _ in range(4)}
+        
+        # This loop maintains 4 active workers continuously
+        for future in as_completed(futures):
             try:
                 upload_result = future.result()
                 print("Upload result:", upload_result)
             except Exception as e:
                 print("Error:", e)
+            # Remove completed future and immediately start a new one
+            futures.remove(future)
+            futures.add(executor.submit(run_it_all))
+
 
 if __name__ == "__main__":
     main()
