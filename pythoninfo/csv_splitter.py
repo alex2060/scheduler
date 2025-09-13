@@ -284,7 +284,7 @@ class UploadClient:
         self.base_url = base_url.rstrip('/')
 
     def upload_csv(self, csv_file_path: str, table_name: str, 
-                   timeout: int = 300,filename: str = "log.csv" ) -> bool:
+                   timeout: int = 300,filename: str = "log.csv" ,thread_id :str:"thead") -> bool:
         """
         Upload CSV file to the /upload endpoint and stream the response
 
@@ -301,6 +301,7 @@ class UploadClient:
 
         if not os.path.exists(csv_file_path):
             print(f"❌ Error: File '{csv_file_path}' does not exist")
+            logging.info(f"[Worker {thread_id}] step  done"+"❌ Error: File "+csv_file_path+" does not exist")
             return False
 
         if not csv_file_path.lower().endswith('.csv'):
@@ -319,6 +320,7 @@ class UploadClient:
                 data = {'tableName': table_name}
 
                 print("🚀 Starting upload..."+upload_url,flush=True)
+                logging.info(f"[Worker {thread_id}] step  done"+"❌ Error: File "+"🚀 Starting upload..."+upload_url)
                 appendfile(filename, "Starting upload..."+self.base_url)
 
                 response = requests.post(
@@ -331,8 +333,10 @@ class UploadClient:
 
                 if response.status_code == 200:
                     print("✅ Upload successful, streaming results:", flush=True)
+                    logging.info(f"[Worker {thread_id}] step  done"+"✅ Upload successful, streaming results:")
                     appendfile(filename, "✅ Upload successful, streaming results:")
                     appendfile(filename, "Starting upload...")
+                    logging.info(f"[Worker {thread_id}] step  done")
                     print("-" * 40)
                     
                     # Buffer to collect all response data
@@ -355,6 +359,7 @@ class UploadClient:
                                     timestamp = time.strftime("%H:%M:%S")
                                     formatted_line = f"[{timestamp}] {line_stripped}"
                                     print(formatted_line, flush=True)
+                                    logging.info(f"[Worker {thread_id}] step  done"+formatted_line)
                                     appendfile(filename, formatted_line)
                                     response_buffer.append(line_stripped)
                                 else:
@@ -374,6 +379,7 @@ class UploadClient:
                                         if line.strip():
                                             formatted_line = f"[{timestamp}] {line.strip()}"
                                             print(formatted_line, flush=True)
+                                            logging.info(f"[Worker {thread_id}] step  done"+formatted_line)
                                             appendfile(filename, formatted_line)
                                             response_buffer.append(line.strip())
                                 else:
@@ -499,17 +505,10 @@ def run_it_all():
 
     # Parallel upload
     logging.info(f"[Worker {thread_id}] step  done"+"here!")
-    result = run_upload_client(
-        file,
-        table["check_test_result"]["table_name"],
-        server,
-        600000,
-        "output/output_"+str(thread_id)+"_"+str(re.sub(r'[^a-zA-Z0-9]', '', file))+"_"+str(str(re.sub(r'[^a-zA-Z0-9]', '', server)))+".txt",
-    )
     print("herewego",flush=True)
     logging.info(f"[Worker {thread_id}] step  done"+"here!")
     #client = UploadClient(server)
-    #success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, f"myfileoutput{thread_id}.txt")
+    success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, f"myfileoutput{thread_id}.txt",thread_id)
     remove_from_global_dict(server)
     
     logging.info(f"[Worker {thread_id}] step  done"+"here!"+file)
@@ -519,8 +518,8 @@ def run_it_all():
 
 
 def main():
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        futures = {executor.submit(run_it_all) for _ in range(4)}
+    with ThreadPoolExecutor(max_workers=6) as executor:
+        futures = {executor.submit(run_it_all) for _ in range(6)}
         
         try:
             while True:
