@@ -455,7 +455,7 @@ def run_it_all():
     with file_lock:
         # Pick next file
         print("loading")
-        logging.info(f"[Worker {worker_id}] step {step} done")
+        logging.info(f"[Worker {thread_id}] step  done")
         file = get_most_recent_file("loadingcsv")
         if file==None:
             time.sleep(5)
