@@ -489,8 +489,8 @@ def run_it_all():
 
 def main():
     #split_csv("septembercall_1.csv")
-    with ThreadPoolExecutor(max_workers=6) as executor:
-        futures = {executor.submit(run_it_all) for _ in range(6)}
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        futures = {executor.submit(run_it_all) for _ in range(10)}
         
         try:
             while True:
