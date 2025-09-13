@@ -144,9 +144,12 @@ def get_most_recent_file(directory: str, pattern: str = "*", exclude: Optional[U
         return None
     
     files_sorted = sorted(files, key=lambda p: os.path.getmtime(p), reverse=True)
-    
+    count=0
     for f in files_sorted:
+        count+=1
         abs_path = f
+        if (count==50):
+            return None
         
         # Skip if file is in exclude set
         if abs_path in exclude_set:
@@ -155,6 +158,7 @@ def get_most_recent_file(directory: str, pattern: str = "*", exclude: Optional[U
         # Skip if file is already processed (in global dictionary)
         if is_in_global_dict(abs_path):
             continue
+
             
         # Return the first file that meets all criteria
         return f
@@ -467,7 +471,7 @@ def run_it_all():
         file,
         table["check_test_result"]["table_name"],
         server,
-        6000,
+        6000000000000,
         "output/output_"+str(thread_id)+"_"+str(re.sub(r'[^a-zA-Z0-9]', '', file))+"_"+str(str(re.sub(r'[^a-zA-Z0-9]', '', server)))+".txt",
     )
     print("herewego",flush=True)
@@ -481,7 +485,7 @@ def run_it_all():
 
 
 def main():
-    #fullsplit("septembercall_1.csv")
+    fullsplit("AAgogo3.csv")
     num_workers = 40000
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = [executor.submit(run_it_all) for _ in range(num_workers)]

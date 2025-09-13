@@ -1,4 +1,0 @@
-Starting upload...https://go.aimachengine.com
-✅ Upload successful, streaming results:
-Starting upload...
-❌ Request error: Response ended prematurely
