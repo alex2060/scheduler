@@ -506,7 +506,7 @@ def run_it_all():
     logging.info(f"[Worker {thread_id}] step  done"+"here!")
     print("herewego",flush=True)
     logging.info(f"[Worker {thread_id}] step  done"+"here!")
-    #client = UploadClient(server)
+    client = UploadClient(server)
     success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, f"myfileoutput{thread_id}.txt",thread_id)
     remove_from_global_dict(server)
     
