@@ -176,9 +176,9 @@ def get_most_recent_file(directory: str, pattern: str = "*", exclude: Optional[U
     
     return None
 
-def getbestServer() -> str:
+def getbestServer(thread_id) -> str:
     """Polls the health endpoint and returns the best server URL, or 'NA'."""
-    status = fetch_and_parse_status("https://go3.aimachengine.com/health")
+    status = fetch_and_parse_status("https://go3.aimachengine.com/health",thread_id)
     if status['best_server']['health'] != "healthy":
         return "NA"
     return status['best_server']['url']
@@ -186,7 +186,7 @@ def getbestServer() -> str:
 class StatusFetchError(Exception):
     pass
 
-def fetch_and_parse_status(url: str) -> dict:
+def fetch_and_parse_status(url: str,thread_id) -> dict:
     """Fetches JSON from URL and returns it, raising on error."""
     try:
         resp = requests.get(url, timeout=50)
@@ -243,7 +243,7 @@ def add_to_global_dict(key: str, value) -> None:
     global _global_dict
     _global_dict[key] = value
 
-def is_in_global_dict(key: str) -> bool:
+def is_in_global_dict(key: str,thread_id) -> bool:
     global _global_dict
     logging.info(f"[Worker {thread_id}] step  done"+_global_dict)
     print(_global_dict)
@@ -469,7 +469,7 @@ def run_it_all():
         # Pick server
         while True:
             try:
-                server = getbestServer()
+                server = getbestServer(thread_id)
             except Exception as e:
                 remove_from_global_dict(file)
                 print("serverdown sleeping")
@@ -481,10 +481,10 @@ def run_it_all():
             finally:
                 pass
 
-            if server != "NA" and not is_in_global_dict(server):
+            if server != "NA" and not is_in_global_dict(server,thread_id):
                 add_to_global_dict(server, "shared_server")
                 break
-            print("no server", server, is_in_global_dict(server))
+            print("no server", server, is_in_global_dict(server,thread_id))
             logging.info(f"[Worker {thread_id}] step  done"+"no server", server, is_in_global_dict(server))
             time.sleep(5)
             print("server used", server)
