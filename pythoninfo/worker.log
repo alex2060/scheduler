@@ -100,3 +100,32 @@
 2025-09-12 23:15:27,617 [MainThread] [Worker 8387452672] step  done[23:15:27] ⏳ Processing...
 2025-09-12 23:15:29,618 [MainThread] [Worker 8387452672] step  doneinFour
 2025-09-12 23:15:29,618 [MainThread] [Worker 8387452672] step  done[23:15:29] ⏳ Processing...
+2025-09-12 23:44:33,119 [ThreadPoolExecutor-0_0] [Worker 6151630848] step  done
+2025-09-12 23:44:33,119 [ThreadPoolExecutor-0_0] [Worker 6151630848] step  donelogged
+2025-09-12 23:44:33,120 [ThreadPoolExecutor-0_0] [Worker 1] step  done{}
+2025-09-12 23:44:46,615 [ThreadPoolExecutor-0_0] [Worker 6151630848] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file'}
+2025-09-12 23:44:46,616 [ThreadPoolExecutor-0_0] [Worker 6151630848] step  doneservers usedhttps://landing1.aimachengine.com
+2025-09-12 23:44:47,034 [ThreadPoolExecutor-0_0] [Worker 6151630848] step  donehere!
+2025-09-12 23:44:47,034 [ThreadPoolExecutor-0_1] [Worker 6168457216] step  done
+2025-09-12 23:44:47,035 [ThreadPoolExecutor-0_0] [Worker 6151630848] step  donehere!
+2025-09-12 23:44:47,035 [ThreadPoolExecutor-0_1] [Worker 6168457216] step  donelogged
+2025-09-12 23:44:47,035 [ThreadPoolExecutor-0_0] [Worker 6151630848] step  done SeptemberCall05_11 here!
+2025-09-12 23:44:47,035 [ThreadPoolExecutor-0_0] [Worker 6151630848] step  done🚀 Starting upload...http://localhost:10000/upload
+2025-09-12 23:44:47,042 [ThreadPoolExecutor-0_1] [Worker 1] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file', 'https://landing1.aimachengine.com': 'shared_server'}
+2025-09-12 23:44:47,042 [ThreadPoolExecutor-0_1] [Worker 1] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file', 'https://landing1.aimachengine.com': 'shared_server'}
+2025-09-12 23:45:00,378 [ThreadPoolExecutor-0_1] [Worker 6168457216] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file', 'https://landing1.aimachengine.com': 'shared_server', 'loadingcsv/septembercall_1_chunk10_274.csv': 'shared_file'}
+2025-09-12 23:45:00,378 [ThreadPoolExecutor-0_1] [Worker 6168457216] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file', 'https://landing1.aimachengine.com': 'shared_server', 'loadingcsv/septembercall_1_chunk10_274.csv': 'shared_file'}
+2025-09-12 23:45:00,379 [ThreadPoolExecutor-0_1] [Worker 6168457216] step  doneno serverhttps://landing1.aimachengine.com
+2025-09-12 23:45:26,170 [ThreadPoolExecutor-0_0] [Worker 6185889792] step  done
+2025-09-12 23:45:26,170 [ThreadPoolExecutor-0_0] [Worker 6185889792] step  donelogged
+2025-09-12 23:45:26,171 [ThreadPoolExecutor-0_0] [Worker 1] step  done{}
+2025-09-12 23:45:39,762 [ThreadPoolExecutor-0_0] [Worker 6185889792] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file'}
+2025-09-12 23:45:39,763 [ThreadPoolExecutor-0_0] [Worker 6185889792] step  doneservers usedhttps://landing1.aimachengine.com
+2025-09-12 23:45:40,039 [ThreadPoolExecutor-0_0] [Worker 6185889792] step  donehere!
+2025-09-12 23:45:40,039 [ThreadPoolExecutor-0_1] [Worker 6202716160] step  done
+2025-09-12 23:45:40,039 [ThreadPoolExecutor-0_0] [Worker 6185889792] step  donehere!
+2025-09-12 23:45:40,039 [ThreadPoolExecutor-0_1] [Worker 6202716160] step  donelogged
+2025-09-12 23:45:40,039 [ThreadPoolExecutor-0_0] [Worker 6185889792] step  done SeptemberCall05_11 here!
+2025-09-12 23:45:40,040 [ThreadPoolExecutor-0_0] [Worker 6185889792] step  done🚀 Starting upload...http://localhost:10000/upload
+2025-09-12 23:45:40,045 [ThreadPoolExecutor-0_1] [Worker 1] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file', 'https://landing1.aimachengine.com': 'shared_server'}
+2025-09-12 23:45:40,046 [ThreadPoolExecutor-0_1] [Worker 1] step  done{'loadingcsv/septembercall_1_chunk10_275.csv': 'shared_file', 'https://landing1.aimachengine.com': 'shared_server'}
