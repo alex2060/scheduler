@@ -245,7 +245,7 @@ def add_to_global_dict(key: str, value) -> None:
 
 def is_in_global_dict(key: str,thread_id) -> bool:
     global _global_dict
-    logging.info(f"[Worker {thread_id}] step  done"+_global_dict)
+    logging.info(f"[Worker {thread_id}] step  done"+str(_global_dict))
     print(_global_dict)
     return key in _global_dict
 
