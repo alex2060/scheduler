@@ -512,7 +512,7 @@ def run_it_all():
     #success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, f"myfileoutput{thread_id}.txt")
     remove_from_global_dict(server)
     
-    "weGotit we are done removing "+file)
+    logging.info(f"[Worker {thread_id}] step  done"+"here!"+file)
     os.remove(file)
     remove_from_global_dict(file)
     return result
