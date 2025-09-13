@@ -30,6 +30,16 @@ from typing import Optional
 import portalocker
 import os
 
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(threadName)s] %(message)s",
+    handlers=[
+        logging.StreamHandler(),             # console
+        logging.FileHandler("worker.log"),   # file
+    ]
+)
 
 # Global dictionary for tracking files and servers
 _global_dict = {}
@@ -444,6 +454,7 @@ def run_it_all():
     with file_lock:
         # Pick next file
         print("loading")
+        logging.info(f"[Worker {worker_id}] step {step} done")
         file = get_most_recent_file("loadingcsv")
         if file==None:
             time.sleep(5)
