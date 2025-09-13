@@ -486,8 +486,6 @@ def run_it_all():
 
 
 def main():
-    run_it_all()
-    exit()
     with ThreadPoolExecutor(max_workers=6) as executor:
         futures = {executor.submit(run_it_all) for _ in range(6)}
         
