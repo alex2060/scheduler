@@ -465,7 +465,18 @@ def run_it_all():
         print("File used", file)
         # Pick server
         while True:
-            server = getbestServer()
+            try:
+                server = getbestServer()
+            except Exception as e:
+                remove_from_global_dict(file)
+                print("serverdown sleeping")
+                time.sleep(5)
+                return "slept server down "+file
+            else:
+                pass
+            finally:
+                pass
+
             if server != "NA" and not is_in_global_dict(server):
                 add_to_global_dict(server, "shared_server")
                 break
