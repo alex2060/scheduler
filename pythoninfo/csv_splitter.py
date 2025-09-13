@@ -420,6 +420,71 @@ class UploadClient:
 
 
 
+def run_it_all():
+    """
+    1. Under lock: pick the latest file and determine the shared server exactly once.
+    2. Store entries in global dict to avoid reuse.
+    3. Unlock before upload to allow parallel uploads.
+    """
+    thread_id = threading.current_thread().ident
+
+    with file_lock:
+        # Pick next file
+        print("loading")
+        logging.info(f"[Worker {thread_id}] step  done")
+        logging.info(f"[Worker {thread_id}] step  done"+"logged")
+
+        file = get_most_recent_file("loadingcsv")
+        if file==None:
+            time.sleep(5)
+            return "no more files"
+        add_to_global_dict(file, "shared_file")
+
+        print("File used", file)
+        # Pick server
+        while True:
+            try:
+                server = getbestServer(thread_id)
+            except Exception as e:
+                remove_from_global_dict(file)
+                print("serverdown sleeping")
+                logging.info(f"[Worker {thread_id}] step  done"+"serverdown sleeping")
+                time.sleep(5)
+                return "slept server down "+file
+            else:
+                pass
+            finally:
+                pass
+
+            if server != "NA" and not is_in_global_dict(server,thread_id):
+                add_to_global_dict(server, "shared_server")
+                break
+            print("no server", server, is_in_global_dict(server,thread_id))
+            logging.info(f"[Worker {thread_id}] step  done"+"no server"+ server)
+            time.sleep(5)
+            print("server used", server)
+            logging.info(f"[Worker {thread_id}] step  done"+"server used"+ server)
+        print("server used", server)
+        logging.info(f"[Worker {thread_id}] step  done"+"servers used"+ server)
+
+        # Process under lock
+        table = process_file_and_fetch_status(file, server)
+
+        # Cleanup under lock
+
+    # Parallel upload
+    logging.info(f"[Worker {thread_id}] step  done"+"here!")
+    print("herewego",flush=True)
+    logging.info(f"[Worker {thread_id}] step  done"+"here!")
+    client = UploadClient(server)
+    logging.info(f"[Worker {thread_id}] step  done "+table["check_test_result"]["table_name"]+" here!")
+    success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, "output/output_"+str(thread_id)+"_"+re.sub(r'[^a-zA-Z0-9]', '', server)+"_"+re.sub(r'[^a-zA-Z0-9]', '', file)+"_.txt",thread_id)
+    remove_from_global_dict(server)
+    
+    logging.info(f"[Worker {thread_id}] step  done"+"here!"+file)
+    os.remove(file)
+    remove_from_global_dict(file)
+    return result
 
 
 def maintain_worker_pool(target_workers=10, max_workers=15):
