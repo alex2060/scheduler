@@ -491,6 +491,7 @@ def main():
         
         try:
             for future in as_completed(futures):
+                print("starting")
                 try:
                     upload_result = future.result()
                     print("Upload result:", upload_result)
