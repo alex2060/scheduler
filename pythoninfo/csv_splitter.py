@@ -559,7 +559,43 @@ def maintain_worker_pool(target_workers=10, max_workers=15):
 
 def main():
     #split_csv("septembercall_1.csv")
-    maintain_worker_pool()
+    # Initialize your executor and futures set outside the loop
+    executor = ThreadPoolExecutor(max_workers=15)
+    futures = set()
+
+    # Start initial 10 workers
+    for _ in range(10):
+        futures.add(executor.submit(run_it_all))
+
+    try:
+        while True:
+            # Create a copy of futures to avoid modification during iteration
+            current_futures = futures.copy()
+            
+            for future in as_completed(current_futures):
+                print("starting")
+                try:
+                    upload_result = future.result()
+                    print("Upload result:", upload_result)
+                except Exception as e:
+                    print("Error:", e)
+                
+                # Remove the completed future and add a new one
+                futures.discard(future)  # discard won't raise error if not found
+                futures.add(executor.submit(run_it_all))
+                
+                # Ensure we always have at least 10 workers
+                while len(futures) < 10:
+                    futures.add(executor.submit(run_it_all))
+                
+                print(f"Active workers: {len(futures)}")
+                break  # Process one completion at a time
+                
+    except KeyboardInterrupt:
+        print("\nStopping workers...")
+        for future in futures:
+            future.cancel()
+        executor.shutdown(wait=True)
 
 
 
