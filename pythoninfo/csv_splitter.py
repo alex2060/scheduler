@@ -473,7 +473,7 @@ def run_it_all():
             except Exception as e:
                 remove_from_global_dict(file)
                 print("serverdown sleeping")
-                logging.info("serverdown sleeping")
+                logging.info(f"[Worker {thread_id}] step  done"+"serverdown sleeping")
                 time.sleep(5)
                 return "slept server down "+file
             else:
@@ -488,9 +488,9 @@ def run_it_all():
             logging.info(f"[Worker {thread_id}] step  done"+"no server", server, is_in_global_dict(server))
             time.sleep(5)
             print("server used", server)
-            logging.info(f"[Worker {thread_id}] step  done"+"server used", server)
+            logging.info(f"[Worker {thread_id}] step  done"+"server used"+ server)
         print("server used", server)
-        logging.info(f"[Worker {thread_id}] step  done"+"servers used", server)
+        logging.info(f"[Worker {thread_id}] step  done"+"servers used"+ server)
 
         # Process under lock
         table = process_file_and_fetch_status(file, server)
