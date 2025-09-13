@@ -245,6 +245,7 @@ def add_to_global_dict(key: str, value) -> None:
 
 def is_in_global_dict(key: str) -> bool:
     global _global_dict
+    logging.info(_global_dict)
     print(_global_dict)
     return key in _global_dict
 
@@ -456,7 +457,7 @@ def run_it_all():
         # Pick next file
         print("loading")
         logging.info(f"[Worker {thread_id}] step  done")
-        print("logged")
+        logging.info("logged")
 
         file = get_most_recent_file("loadingcsv")
         if file==None:
@@ -472,6 +473,7 @@ def run_it_all():
             except Exception as e:
                 remove_from_global_dict(file)
                 print("serverdown sleeping")
+                logging.info("serverdown sleeping")
                 time.sleep(5)
                 return "slept server down "+file
             else:
@@ -483,9 +485,12 @@ def run_it_all():
                 add_to_global_dict(server, "shared_server")
                 break
             print("no server", server, is_in_global_dict(server))
+            logging.info("no server", server, is_in_global_dict(server))
             time.sleep(5)
             print("server used", server)
-        print("servers used", server)
+            logging.info("server used", server)
+        print("server used", server)
+        logging.info("servers used", server)
 
         # Process under lock
         table = process_file_and_fetch_status(file, server)
@@ -493,6 +498,7 @@ def run_it_all():
         # Cleanup under lock
 
     # Parallel upload
+    logging.info("here!")
     result = run_upload_client(
         file,
         table["check_test_result"]["table_name"],
@@ -501,10 +507,11 @@ def run_it_all():
         "output/output_"+str(thread_id)+"_"+str(re.sub(r'[^a-zA-Z0-9]', '', file))+"_"+str(str(re.sub(r'[^a-zA-Z0-9]', '', server)))+".txt",
     )
     print("herewego",flush=True)
+    logging.info("here!")
     #client = UploadClient(server)
     #success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, f"myfileoutput{thread_id}.txt")
     remove_from_global_dict(server)
-    print("weGotit we are done removing "+file)
+    logging.info("weGotit we are done removing "+file)
     os.remove(file)
     remove_from_global_dict(file)
     return result
