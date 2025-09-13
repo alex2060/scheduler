@@ -443,9 +443,10 @@ def run_it_all():
 
     with file_lock:
         # Pick next file
+        print("loading")
         file = get_most_recent_file("loadingcsv")
         if file==None:
-            time.sleep(100)
+            time.sleep(5)
             return "no more files"
         add_to_global_dict(file, "shared_file")
 
@@ -485,7 +486,6 @@ def run_it_all():
 
 
 def main():
-    fullsplit("AAgogo3.csv")
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = {executor.submit(run_it_all) for _ in range(4)}
         
