@@ -420,94 +420,81 @@ class UploadClient:
 
 
 
-def run_it_all():
+
+
+def maintain_worker_pool(target_workers=10, max_workers=15):
     """
-    1. Under lock: pick the latest file and determine the shared server exactly once.
-    2. Store entries in global dict to avoid reuse.
-    3. Unlock before upload to allow parallel uploads.
-    """
-    thread_id = threading.current_thread().ident
-
-    with file_lock:
-        # Pick next file
-        print("loading")
-        logging.info(f"[Worker {thread_id}] step  done")
-        logging.info(f"[Worker {thread_id}] step  done"+"logged")
-
-        file = get_most_recent_file("loadingcsv")
-        if file==None:
-            time.sleep(5)
-            return "no more files"
-        add_to_global_dict(file, "shared_file")
-
-        print("File used", file)
-        # Pick server
-        while True:
-            try:
-                server = getbestServer(thread_id)
-            except Exception as e:
-                remove_from_global_dict(file)
-                print("serverdown sleeping")
-                logging.info(f"[Worker {thread_id}] step  done"+"serverdown sleeping")
-                time.sleep(5)
-                return "slept server down "+file
-            else:
-                pass
-            finally:
-                pass
-
-            if server != "NA" and not is_in_global_dict(server,thread_id):
-                add_to_global_dict(server, "shared_server")
-                break
-            print("no server", server, is_in_global_dict(server,thread_id))
-            logging.info(f"[Worker {thread_id}] step  done"+"no server"+ server)
-            time.sleep(5)
-            print("server used", server)
-            logging.info(f"[Worker {thread_id}] step  done"+"server used"+ server)
-        print("server used", server)
-        logging.info(f"[Worker {thread_id}] step  done"+"servers used"+ server)
-
-        # Process under lock
-        table = process_file_and_fetch_status(file, server)
-
-        # Cleanup under lock
-
-    # Parallel upload
-    logging.info(f"[Worker {thread_id}] step  done"+"here!")
-    print("herewego",flush=True)
-    logging.info(f"[Worker {thread_id}] step  done"+"here!")
-    client = UploadClient(server)
-    logging.info(f"[Worker {thread_id}] step  done "+table["check_test_result"]["table_name"]+" here!")
-    success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, "output/output_"+str(thread_id)+"_"+re.sub(r'[^a-zA-Z0-9]', '', server)+"_"+re.sub(r'[^a-zA-Z0-9]', '', file)+"_.txt",thread_id)
-    remove_from_global_dict(server)
+    Maintains a pool of exactly target_workers running at all times.
     
-    logging.info(f"[Worker {thread_id}] step  done"+"here!"+file)
-    os.remove(file)
-    remove_from_global_dict(file)
-    return result
+    Args:
+        target_workers: Number of workers to maintain (default: 10)
+        max_workers: Maximum workers the executor can handle (default: 15)
+    """
+    
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = set()
+        
+        # Start initial workers
+        print(f"Starting {target_workers} initial workers...")
+        for i in range(target_workers):
+            future = executor.submit(run_it_all)
+            futures.add(future)
+        
+        print(f"Started {len(futures)} workers")
+        
+        try:
+            while True:
+                # Wait for at least one task to complete
+                if futures:  # Only proceed if we have active futures
+                    completed_futures = []
+                    
+                    # Collect all completed futures in this iteration
+                    for future in as_completed(futures, timeout=1.0):
+                        try:
+                            upload_result = future.result()
+                            print(f"Worker completed: {upload_result}")
+                            completed_futures.append(future)
+                        except Exception as e:
+                            print(f"Worker error: {e}")
+                            completed_futures.append(future)
+                    
+                    # Remove completed futures and start new ones
+                    for future in completed_futures:
+                        futures.remove(future)
+                        
+                        # Start a new worker to replace the completed one
+                        new_future = executor.submit(run_it_all)
+                        futures.add(new_future)
+                        print(f"Started replacement worker. Active workers: {len(futures)}")
+                
+                # Safety check - ensure we always have the target number of workers
+                while len(futures) < target_workers:
+                    new_future = executor.submit(run_it_all)
+                    futures.add(new_future)
+                    print(f"Added worker to maintain pool. Active workers: {len(futures)}")
+                    
+        except KeyboardInterrupt:
+            print("\nStopping workers...")
+            # Cancel all pending futures
+            cancelled_count = 0
+            for future in futures:
+                if future.cancel():
+                    cancelled_count += 1
+            print(f"Cancelled {cancelled_count} pending workers")
+            
+            # Wait for running workers to complete (optional - you can skip this)
+            print("Waiting for running workers to complete...")
+            for future in futures:
+                if not future.cancelled():
+                    try:
+                        future.result(timeout=5)  # Wait up to 5 seconds per worker
+                    except Exception as e:
+                        print(f"Worker shutdown error: {e}")
 
 
 def main():
     #split_csv("septembercall_1.csv")
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = {executor.submit(run_it_all) for _ in range(10)}
-        
-        try:
-            while True:
-                for future in as_completed(futures):
-                    print("starting")
-                    try:
-                        upload_result = future.result()
-                        print("Upload result:", upload_result)
-                    except Exception as e:
-                        print("Error:", e)
-                    futures.remove(future)
-                    futures.add(executor.submit(run_it_all))
-                    
-        except KeyboardInterrupt:
-            print("\nStopping workers...")
-            for future in futures:
-                future.cancel()
+    maintain_worker_pool()
 
 
 
