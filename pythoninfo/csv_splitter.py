@@ -459,7 +459,7 @@ def run_it_all():
         logging.info(f"[Worker {thread_id}] step  done")
         logging.info(f"[Worker {thread_id}] step  done"+"logged")
 
-        file = get_most_recent_file(thread_id,"loadingcsv")
+        file = get_most_recent_file("loadingcsv")
         if file==None:
             time.sleep(5)
             return "no more files"
