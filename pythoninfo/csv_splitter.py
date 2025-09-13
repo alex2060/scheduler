@@ -457,7 +457,7 @@ def run_it_all():
         print("loading")
         logging.info(f"[Worker {thread_id}] step  done")
         print("logged")
-        
+
         file = get_most_recent_file("loadingcsv")
         if file==None:
             time.sleep(5)
@@ -515,16 +515,17 @@ def main():
         futures = {executor.submit(run_it_all) for _ in range(4)}
         
         try:
-            for future in as_completed(futures):
-                print("starting")
-                try:
-                    upload_result = future.result()
-                    print("Upload result:", upload_result)
-                except Exception as e:
-                    print("Error:", e)
-                futures.remove(future)
-                futures.add(executor.submit(run_it_all))
-                
+            while True:
+                for future in as_completed(futures):
+                    print("starting")
+                    try:
+                        upload_result = future.result()
+                        print("Upload result:", upload_result)
+                    except Exception as e:
+                        print("Error:", e)
+                    futures.remove(future)
+                    futures.add(executor.submit(run_it_all))
+                    
         except KeyboardInterrupt:
             print("\nStopping workers...")
             for future in futures:
