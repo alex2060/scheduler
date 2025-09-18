@@ -11,7 +11,7 @@ Usage:
     python csv_splitter.py input.csv -s 3 10 50
     python csv_splitter.py input.csv -o output_folder
 """
-
+from sqlalchemy import create_engine, text
 import os
 import csv
 import glob
@@ -30,8 +30,73 @@ from typing import Optional
 import portalocker
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
-
 import logging
+import ReportUpdate
+
+
+from sqlalchemy import text
+
+import csv
+
+
+def read_csv_by_name(file_name):
+    """
+    Read a CSV file using the csv module and print all data as arrays.
+    
+    Parameters:
+    file_name (str): Name of the CSV file
+    
+    Returns:
+    list: List of rows (each row is a list of values)
+    """
+    try:
+        with open(file_name, 'r', newline='', encoding='utf-8') as file:
+            csv_reader = csv.reader(file)
+            
+            # Read all rows into a list
+            rows = list(csv_reader)
+            
+            print(f"=== Reading CSV: {file_name} ===")
+            print(f"Total rows: {len(rows)}")
+            
+            if rows:
+                print(f"Columns: {len(rows[0])}")
+                print()
+                
+                print("=== Header Row ===")
+                print(rows[0])
+                print()
+                
+                print("=== All Rows as Arrays ===")
+                for i, row in enumerate(rows):
+                    print(f"Row {i}: {row}")
+                print()
+                
+                # If you want just the data without headers
+                if len(rows) > 1:
+                    print("=== Data Rows Only (without header) ===")
+                    for i, row in enumerate(rows[1:], 1):
+                        print(f"Data Row {i}: {row}")
+            
+            return rows
+            
+    except FileNotFoundError:
+        print(f"Error: File '{file_name}' not found.")
+        return []
+    except Exception as e:
+        print(f"Error reading CSV: {e}")
+        return []
+
+# Usage:
+
+
+# Usage:
+
+
+
+class StatusFetchError(Exception):
+    pass
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -185,9 +250,6 @@ def getbestServer(thread_id) -> str:
         return "NA"
     return status['best_server']['url']
 
-class StatusFetchError(Exception):
-    pass
-
 def fetch_and_parse_status(url: str,thread_id) -> dict:
     """Fetches JSON from URL and returns it, raising on error."""
     try:
@@ -260,25 +322,6 @@ def remove_from_global_dict(key: str) -> bool:
 
 file_lock = threading.Lock()
 
-
-
-def appendfile(filename: str, text: str) -> None:
-    """
-    Append a line of text to the given file, using an exclusive lock
-    to prevent interleaving when called from multiple processes.
-    """
-    # Open file in append-plus mode to allow locking
-    with open(filename, "a+", encoding="utf-8") as f:
-        # Acquire exclusive lock (blocks until available)
-        portalocker.lock(f, portalocker.LOCK_EX)
-        try:
-            f.write(text + "\n")
-            f.flush()
-            os.fsync(f.fileno())
-        finally:
-            # Always release the lock
-            portalocker.unlock(f)
-
 class UploadClient:
     """Client for uploading CSV files to the transcription service"""
 
@@ -310,18 +353,11 @@ class UploadClient:
             return False
 
         file_size = os.path.getsize(csv_file_path) / (1024 * 1024)  # MB
-        print("📁 File: {} ({} MB)"+csv_file_path,flush=True)
-        print("🏷️  Table:",flush=True)
-        print("🌐 Upload URL: ",flush=True)
-        print("=" * 60)
-
         with open(csv_file_path, 'rb') as csv_file:
             files = {'file': csv_file}
             data = {'tableName': table_name}
 
-            print("🚀 Starting upload..."+upload_url,flush=True)
             logging.info(f"[Worker {thread_id}] step  done"+"🚀 Starting upload..."+upload_url)
-            appendfile(filename, "Starting upload..."+self.base_url)
 
             response = requests.post(
                 upload_url,
@@ -334,20 +370,15 @@ class UploadClient:
             if response.status_code == 200:
                 print("✅ Upload successful, streaming results:", flush=True)
                 logging.info(f"[Worker {thread_id}] step  done"+"✅ Upload successful, streaming results:")
-                appendfile(filename, "✅ Upload successful, streaming results:")
-                appendfile(filename, "Starting upload...")
                 logging.info(f"[Worker {thread_id}] step  done")
                 print("-" * 40)
-                
                 # Buffer to collect all response data
                 response_buffer = []
-                
                 logging.info(f"[Worker {thread_id}] step  done"+"intwo")
                 # First, try to get the content length to see if we have a complete response
                 content_length = response.headers.get('content-length')
                 if content_length:
                     print(f"Expected content length: {content_length} bytes", flush=True)
-                
                 # Stream and collect the response with timeout handling
                 response_received = False
                 logging.info(f"[Worker {thread_id}] step  done"+"inthree"+str(response))
@@ -362,7 +393,6 @@ class UploadClient:
                             formatted_line = f"[{timestamp}] {line_stripped}"
                             print(formatted_line, flush=True)
                             logging.info(f"[Worker {thread_id}] step  done"+formatted_line)
-                            appendfile(filename, formatted_line)
                             response_buffer.append(line_stripped)
                         else:
                             # Still process empty lines but don't print them
@@ -383,36 +413,23 @@ class UploadClient:
                                     formatted_line = f"[{timestamp}] {line.strip()}"
                                     print(formatted_line, flush=True)
                                     logging.info(f"[Worker {thread_id}] step  done"+formatted_line)
-                                    appendfile(filename, formatted_line)
                                     response_buffer.append(line.strip())
                         else:
                             print("Response appears to be empty", flush=True)
-                            appendfile(filename, "Response appears to be empty")
                     except Exception as e:
                         print(f"Error reading full response: {e}", flush=True)
-                        appendfile(filename, f"Error reading full response: {e}")
-                
                 print("-" * 40)
                 print("🎉 Processing complete!")
-                appendfile(filename, "🎉 Processing complete!")
-                
                 # Log summary
                 total_lines = len([line for line in response_buffer if line.strip()])
-                print(f"Total lines processed: {total_lines}", flush=True)
-                appendfile(filename, f"Total lines processed: {total_lines}")
-                
+                print(f"Total lines processed: {total_lines}", flush=True)                
                 return True
-                    
-
-
 
             else:
                 logging.info(f"[Worker {thread_id}] step  done"+"No streaming data received, attempting to get full response...")
-                appendfile(filename, f"❌ Error: HTTP {response.status_code}")
                 try:
                     error_text = response.text
                     print(f"Response: {error_text}")
-                    appendfile(filename, f"Response: {error_text}")
                 except:
                     print("Could not read error response")
                 return False
@@ -420,35 +437,65 @@ class UploadClient:
 
 
 
+
+
+
+
+
+def process_task(file,server,thread_id):
+    logging.info(f"[Worker {thread_id}] "+"🚀 Starting task...")
+    MYSQL_URI = "mysql+pymysql://admin:RQApoaNQ@mysql-199933-0.cloudclusters.net:10033/working_db"
+    engine = create_engine(MYSQL_URI)
+    logging.info(f"[Worker {thread_id}] "+" "+" File is a TASK"+" doing task in "+file+" with"+server)
+    fileinfo=read_csv_by_name(file)
+    logging.info(f"[Worker {thread_id}] "+" "+" File is a TASK"+" doing task in "+file+" with"+str(fileinfo))
+
+
+    if "CallRateingReportDay"==fileinfo[0][0]:
+        ReportUpdate.UpdateDayRateingReport(fileinfo);
+    if "CallRateingReportWeek"==fileinfo[0][0]:
+        ReportUpdate.UpdateRateingweekReport(fileinfo);
+
+
+    if "CallRateingTypeDay"==fileinfo[0][0]:
+        ReportUpdate.UpdateTypeDayReport(fileinfo);
+    if "CallRateingTypeWeek"==fileinfo[0][0]:
+        ReportUpdate.UpdateTypeWeekReport(fileinfo);
+
+
+    if "CallRateingRevDay"==fileinfo[0][0]:
+        ReportUpdate.UpdateRevDayReport(fileinfo);
+    if "CallRateingRevWeek"==fileinfo[0][0]:
+        ReportUpdate.UpdateRevWeekReport(fileinfo);
+
+
+
 def run_it_all():
+    
     """
     1. Under lock: pick the latest file and determine the shared server exactly once.
     2. Store entries in global dict to avoid reuse.
     3. Unlock before upload to allow parallel uploads.
     """
+
     thread_id = threading.current_thread().ident
 
     with file_lock:
         # Pick next file
-        print("loading")
         logging.info(f"[Worker {thread_id}] step  done")
-        logging.info(f"[Worker {thread_id}] step  done"+"logged")
-
         file = get_most_recent_file("loadingcsv")
         if file==None:
             time.sleep(5)
             return "no more files"
         add_to_global_dict(file, "shared_file")
-
-        print("File used", file)
         # Pick server
         while True:
             try:
                 server = getbestServer(thread_id)
             except Exception as e:
                 remove_from_global_dict(file)
-                print("serverdown sleeping")
                 logging.info(f"[Worker {thread_id}] step  done"+"serverdown sleeping")
+                remove_from_global_dict(file)
                 time.sleep(5)
                 return "slept server down "+file
             else:
@@ -459,42 +506,40 @@ def run_it_all():
             if server != "NA" and not is_in_global_dict(server,thread_id):
                 add_to_global_dict(server, "shared_server")
                 break
-            print("no server", server, is_in_global_dict(server,thread_id))
             logging.info(f"[Worker {thread_id}] step  done"+"no server"+ server)
             time.sleep(5)
-            print("server used", server)
-            logging.info(f"[Worker {thread_id}] step  done"+"server used"+ server)
-        print("server used", server)
         logging.info(f"[Worker {thread_id}] step  done"+"servers used"+ server)
 
-        # Process under lock
-        table = process_file_and_fetch_status(file, server)
-
-        # Cleanup under lock
-
-    # Parallel upload
-    logging.info(f"[Worker {thread_id}] step  done"+"here!")
-    print("herewego",flush=True)
-    logging.info(f"[Worker {thread_id}] step  done"+"here!")
     client = UploadClient(server)
-    logging.info(f"[Worker {thread_id}] step  done "+table["check_test_result"]["table_name"]+" here!")
-    success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, "output/output_"+str(thread_id)+"_"+re.sub(r'[^a-zA-Z0-9]', '', server)+"_"+re.sub(r'[^a-zA-Z0-9]', '', file)+"_.txt",thread_id)
+    #if tail.csv
+    if file.endswith(".csv"):
+        table = process_file_and_fetch_status(file, server)
+        print("File is a CSV")
+        logging.info(f"[Worker {thread_id}] step  done "+table["check_test_result"]["table_name"]+" File is a CSV")
+        success = client.upload_csv(file, table["check_test_result"]["table_name"], 6000, "output/output_"+str(thread_id)+"_"+re.sub(r'[^a-zA-Z0-9]', '', server)+"_"+re.sub(r'[^a-zA-Z0-9]', '', file)+"_.txt",thread_id)
+    elif file.endswith(".task"):
+        logging.info(f"[Worker {thread_id}] step  done "+" File is a TASK")
+        print("File is a TASK")
+        process_task(file,server,thread_id)
+
+    else:
+        print("Unknown extension")
+
+    #else if task
     remove_from_global_dict(server)
-    
     logging.info(f"[Worker {thread_id}] step  done"+"here!"+file)
     os.remove(file)
     remove_from_global_dict(file)
     return result
 
 
-def maintain_worker_pool(target_workers=10, max_workers=15):
+def main():
     """
-    Maintains a pool of exactly target_workers running at all times.
-    
-    Args:
-        target_workers: Number of workers to maintain (default: 10)
-        max_workers: Maximum workers the executor can handle (default: 15)
+    Maintains exactly 10 workers at all times using proper ThreadPoolExecutor management.
     """
+    #split_csv("septembercall_1.csv")
+    target_workers = 20
+    max_workers = 25
     
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = set()
@@ -504,39 +549,46 @@ def maintain_worker_pool(target_workers=10, max_workers=15):
         for i in range(target_workers):
             future = executor.submit(run_it_all)
             futures.add(future)
-        
         print(f"Started {len(futures)} workers")
-        
         try:
             while True:
-                # Wait for at least one task to complete
+                # Wait for at least one task to complete with timeout
                 if futures:  # Only proceed if we have active futures
                     completed_futures = []
+                    try:
+                        # Use timeout to prevent indefinite blocking
+                        for future in as_completed(futures, timeout=600000.0):
+                            try:
+                                upload_result = future.result()
+                                print(f"Worker completed: {upload_result}")
+                                completed_futures.append(future)
+                            except Exception as e:
+                                print(f"Worker error: {e}")
+                                completed_futures.append(future)
+                            # Break after processing one completion to maintain control
+                            break
+                            
+                    except TimeoutError:
+                        # No completions in the last second, continue monitoring
+                        pass
                     
-                    # Collect all completed futures in this iteration
-                    for future in as_completed(futures, timeout=1.0):
-                        try:
-                            upload_result = future.result()
-                            print(f"Worker completed: {upload_result}")
-                            completed_futures.append(future)
-                        except Exception as e:
-                            print(f"Worker error: {e}")
-                            completed_futures.append(future)
-                    
-                    # Remove completed futures and start new ones
+                    # Remove completed futures and start replacements
                     for future in completed_futures:
-                        futures.remove(future)
-                        
-                        # Start a new worker to replace the completed one
-                        new_future = executor.submit(run_it_all)
+                        futures.remove(future)  # Remove completed future
+                        new_future = executor.submit(run_it_all)  # Start replacement
                         futures.add(new_future)
                         print(f"Started replacement worker. Active workers: {len(futures)}")
-                
-                # Safety check - ensure we always have the target number of workers
+                # Safety check - ensure we maintain the target number of workers
                 while len(futures) < target_workers:
                     new_future = executor.submit(run_it_all)
                     futures.add(new_future)
                     print(f"Added worker to maintain pool. Active workers: {len(futures)}")
+                
+                # Optional: prevent runaway worker creation
+                while len(futures) > target_workers:
+                    # This shouldn't happen with proper management, but safety check
+                    print(f"Warning: Too many workers ({len(futures)}). This shouldn't happen.")
+                    break
                     
         except KeyboardInterrupt:
             print("\nStopping workers...")
@@ -547,7 +599,7 @@ def maintain_worker_pool(target_workers=10, max_workers=15):
                     cancelled_count += 1
             print(f"Cancelled {cancelled_count} pending workers")
             
-            # Wait for running workers to complete (optional - you can skip this)
+            # Wait for running workers to complete (with timeout)
             print("Waiting for running workers to complete...")
             for future in futures:
                 if not future.cancelled():
@@ -555,49 +607,6 @@ def maintain_worker_pool(target_workers=10, max_workers=15):
                         future.result(timeout=5)  # Wait up to 5 seconds per worker
                     except Exception as e:
                         print(f"Worker shutdown error: {e}")
-
-
-def main():
-    #split_csv("septembercall_1.csv")
-    # Initialize your executor and futures set outside the loop
-    executor = ThreadPoolExecutor(max_workers=15)
-    futures = set()
-
-    # Start initial 10 workers
-    for _ in range(10):
-        futures.add(executor.submit(run_it_all))
-
-    try:
-        while True:
-            # Create a copy of futures to avoid modification during iteration
-            current_futures = futures.copy()
-            
-            for future in as_completed(current_futures):
-                print("starting")
-                try:
-                    upload_result = future.result()
-                    print("Upload result:", upload_result)
-                except Exception as e:
-                    print("Error:", e)
-                
-                # Remove the completed future and add a new one
-                futures.discard(future)  # discard won't raise error if not found
-                futures.add(executor.submit(run_it_all))
-                
-                # Ensure we always have at least 10 workers
-                while len(futures) < 10:
-                    futures.add(executor.submit(run_it_all))
-                
-                print(f"Active workers: {len(futures)}")
-                break  # Process one completion at a time
-                
-    except KeyboardInterrupt:
-        print("\nStopping workers...")
-        for future in futures:
-            future.cancel()
-        executor.shutdown(wait=True)
-
-
 
 if __name__ == "__main__":
     main()
