@@ -11,6 +11,7 @@ Usage:
     python csv_splitter.py input.csv -s 3 10 50
     python csv_splitter.py input.csv -o output_folder
 """
+import ollamajsonfilter
 from sqlalchemy import create_engine, text
 import os
 import csv
@@ -348,10 +349,7 @@ class UploadClient:
             logging.info(f"[Worker {thread_id}] step  done"+"❌ Error: File "+csv_file_path+" does not exist")
             return False
 
-        if not csv_file_path.lower().endswith('.csv'):
-            print("❌ Error: File must be a CSV file")
-            return False
-
+        logging.info(f"[Worker {thread_id}] in upload"+"🚀 "+upload_url)
         file_size = os.path.getsize(csv_file_path) / (1024 * 1024)  # MB
         with open(csv_file_path, 'rb') as csv_file:
             files = {'file': csv_file}
@@ -435,13 +433,6 @@ class UploadClient:
                 return False
 
 
-
-
-
-
-
-
-
 def process_task(file,server,thread_id):
     logging.info(f"[Worker {thread_id}] "+"🚀 Starting task...")
     MYSQL_URI = "mysql+pymysql://admin:RQApoaNQ@mysql-199933-0.cloudclusters.net:10033/working_db"
@@ -449,25 +440,15 @@ def process_task(file,server,thread_id):
     logging.info(f"[Worker {thread_id}] "+" "+" File is a TASK"+" doing task in "+file+" with"+server)
     fileinfo=read_csv_by_name(file)
     logging.info(f"[Worker {thread_id}] "+" "+" File is a TASK"+" doing task in "+file+" with"+str(fileinfo))
-
-
-    if "CallRateingReportDay"==fileinfo[0][0]:
-        ReportUpdate.UpdateDayRateingReport(fileinfo);
-    if "CallRateingReportWeek"==fileinfo[0][0]:
-        ReportUpdate.UpdateRateingweekReport(fileinfo);
-
-
-    if "CallRateingTypeDay"==fileinfo[0][0]:
-        ReportUpdate.UpdateTypeDayReport(fileinfo);
-    if "CallRateingTypeWeek"==fileinfo[0][0]:
-        ReportUpdate.UpdateTypeWeekReport(fileinfo);
-
-
-    if "CallRateingRevDay"==fileinfo[0][0]:
-        ReportUpdate.UpdateRevDayReport(fileinfo);
-    if "CallRateingRevWeek"==fileinfo[0][0]:
-        ReportUpdate.UpdateRevWeekReport(fileinfo);
-
+    functionArray=[
+    ["CallRateingReportDay",ReportUpdate.UpdateRateingDayReport],["CallRateingReportWeek",ReportUpdate.UpdateRateingweekReport],
+    ["CallRateingTypeDay",ReportUpdate.UpdateTypeDayReport],["CallRateingTypeWeek",ReportUpdate.UpdateTypeWeekReport],
+    ["Transcribe",ReportUpdate.TranscribeInvaid]
+    ]
+    print(fileinfo)
+    for x in range(len(functionArray)):
+        if functionArray[x][0]==fileinfo[0][0]:
+            functionArray[x][1](fileinfo)
 
 
 def run_it_all():
@@ -520,7 +501,7 @@ def run_it_all():
     elif file.endswith(".task"):
         logging.info(f"[Worker {thread_id}] step  done "+" File is a TASK")
         print("File is a TASK")
-        process_task(file,server,thread_id)
+        success = client.upload_csv(file, "task", 6000, "output/output_"+str(thread_id)+"_"+re.sub(r'[^a-zA-Z0-9]', '', server)+"_"+re.sub(r'[^a-zA-Z0-9]', '', file)+"_.txt",thread_id)
 
     else:
         print("Unknown extension")
@@ -537,9 +518,11 @@ def main():
     """
     Maintains exactly 10 workers at all times using proper ThreadPoolExecutor management.
     """
-    #split_csv("septembercall_1.csv")
-    target_workers = 20
-    max_workers = 25
+    #process_task("loadingcsv/check1.task","server",132)
+        
+    #exit()
+    target_workers = 1
+    max_workers = 1
     
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = set()
@@ -607,6 +590,7 @@ def main():
                         future.result(timeout=5)  # Wait up to 5 seconds per worker
                     except Exception as e:
                         print(f"Worker shutdown error: {e}")
+
 
 if __name__ == "__main__":
     main()
