@@ -452,7 +452,7 @@ def process_task(file,server,thread_id):
 
 
 def run_it_all():
-    
+
     """
     1. Under lock: pick the latest file and determine the shared server exactly once.
     2. Store entries in global dict to avoid reuse.
@@ -460,7 +460,6 @@ def run_it_all():
     """
 
     thread_id = threading.current_thread().ident
-
     with file_lock:
         # Pick next file
         logging.info(f"[Worker {thread_id}] step  done")
